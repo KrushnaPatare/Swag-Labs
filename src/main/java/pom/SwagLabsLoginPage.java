@@ -12,7 +12,7 @@ public class SwagLabsLoginPage {
     @FindBy (xpath = "//input[@id='password']") private WebElement password;
     @FindBy (xpath = "//input[@type='submit']") private WebElement login;
     @FindBy (xpath = "//h3[@data-test='error']") private WebElement errorBox;
-    @FindBy (xpath = "//button[@class='error-button']") private WebElement errorButton;
+    @FindBy (xpath = "//button[@class='error-button']") private WebElement errorCancelButton;
     @FindBy (xpath = "//input[@placeholder='Username']") private WebElement usernamePlaceHolder;
     @FindBy (xpath = "//input[@placeholder='Password']") private WebElement passwordPlaceHolder;
     
@@ -45,7 +45,7 @@ public class SwagLabsLoginPage {
         return value; }
     
     public void clickErrorOrWarningBoxCancelButton() 
-    {errorButton.click(); }
+    {errorCancelButton.click(); }
     
     public String getusernamePlaceHolderText() 
     {String usernamePlaceHolderText = usernamePlaceHolder.getAttribute("placeholder");
