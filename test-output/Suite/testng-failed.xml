@@ -7,7 +7,7 @@
       <class name="test.SwagLabs2HomepageTest">
         <methods>
           <include name="configureReport"/>
-          <include name="clickSort_ProductsBefore_PredefinedNumber"/>
+          <include name="clickSortAfter_PreviousSortedResults_GotSortedAgain"/>
           <include name="openInventorypage"/>
           <include name="createReport"/>
           <include name="publishResult"/>

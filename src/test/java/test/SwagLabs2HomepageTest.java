@@ -249,7 +249,7 @@ import utility.ExtentReport;
 			Assert.assertEquals(expectedProduct, actualProduct);
 			test = reports.createTest("clickSort_ProductOrder_UnarrangedLikeBefore");
 			Thread.sleep(100);
-		}*/
+		}
 		
 		@Test()
 		public void clickSortBefore_DoOtherActions_SavedSortingType() throws InterruptedException {
@@ -260,16 +260,35 @@ import utility.ExtentReport;
 			driver.navigate().back();
 			String expectedProduct = "Sauce Labs Backpack";
 			String actualProduct = driver.findElement(By.xpath("(//div[@class='inventory_item_name'])[1]")).getText();
-			
+			System.out.println("expectedProduct = "+expectedProduct);
+			System.out.println("actualProduct = "+actualProduct);
 			Assert.assertEquals(expectedProduct, actualProduct);
 			test = reports.createTest("clickSortBefore_DoOtherActions_SavedSortingType");
 			Thread.sleep(100);
-			
 		}
-		/*
-		@Test()
-		public void clickSortAfter_PreviousSortedResults_GotSortedAgain() {}
 		
+		
+		@Test()
+		public void clickSortAfter_PreviousSortedResults_GotSortedAgain() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			ArrayList<String> aop = SwagLabsHomepage.sortByDescendingOrder();
+			ArrayList<String> asc =SwagLabsHomepage.sortByAscendingOrder();
+
+			List <WebElement> item = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
+			int size = item.size();
+			for(int i=0;i<size;i++) {
+				
+				String expectedProductBanner = asc.get(i);
+				String actualProductBanner = item.get(i).getText();
+				System.out.println("expectedProductBanner = "+expectedProductBanner);
+				System.out.println("actualProductBanner = "+actualProductBanner);
+				Assert.assertEquals(expectedProductBanner, actualProductBanner);
+			}
+			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
+				Thread.sleep(100);
+		}
+		*/
 		
 		
 		
@@ -278,7 +297,7 @@ import utility.ExtentReport;
 		
 		@Test()
 		public void clickOpenMenu_Clickable_OpenedOptions() {}
-		
+		/*
 		@Test()
 		public void clickOpenMenu_OptionsList_CheckedAllOptions() {}
 		

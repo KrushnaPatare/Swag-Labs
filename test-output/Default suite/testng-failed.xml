@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.SwagLabs1LoginTests">
+      <class name="test.SwagLabs2HomepageTest">
         <methods>
-          <include name="launchBrowser"/>
           <include name="configureReport"/>
-          <include name="publishResult"/>
-          <include name="doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG"/>
+          <include name="clickSortAfter_PreviousSortedResults_GotSortedAgain"/>
+          <include name="openInventorypage"/>
           <include name="createReport"/>
+          <include name="publishResult"/>
         </methods>
-      </class> <!-- test.SwagLabs1LoginTests -->
+      </class> <!-- test.SwagLabs2HomepageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
