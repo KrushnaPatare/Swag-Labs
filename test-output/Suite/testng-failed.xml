@@ -6,8 +6,8 @@
     <classes>
       <class name="test.SwagLabs2HomepageTest">
         <methods>
+          <include name="clickOpenMenu_CloseMenuButton_ClosedAllOptions"/>
           <include name="configureReport"/>
-          <include name="clickSortAfter_PreviousSortedResults_GotSortedAgain"/>
           <include name="openInventorypage"/>
           <include name="createReport"/>
           <include name="publishResult"/>

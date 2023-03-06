@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -187,7 +188,6 @@ import utility.ExtentReport;
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
 			SwagLabsHomepage.sortByAscendingOrder();
 			
-
 			List <WebElement> item = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
 			int size = item.size();
 			for(int i=0;i<size;i++) {
@@ -288,7 +288,7 @@ import utility.ExtentReport;
 			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
 				Thread.sleep(100);
 		}
-		*/
+		
 		
 		
 		
@@ -315,31 +315,125 @@ import utility.ExtentReport;
 				System.out.println("actualOptions = "+actualOptions);
 				Assert.assertEquals(expectedOptions,actualOptions);
 			}
-			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
+			test = reports.createTest("clickOpenMenu_Clickable_OpenedAllOptions");
 			Thread.sleep(100);
 		}
 		
 		
 		@Test()
-		public void clickOpenMenu_$About$Option_OpenedLinkedPage() {
+		public void clickOpenMenu_$About$Option_OpenedLinkedPage() throws InterruptedException {
 			
-			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnOpenMenuButton();
+			SwagLabsHomepage.clickOnaboutButton();
+			String actualTitle = SwagLabsHomepage.getTitle(driver);
+			String expectedTitle = "Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing";
+			System.out.println("expectedTitle = "+expectedTitle);
+			System.out.println("actualTitle = "+actualTitle);
+			Assert.assertEquals(expectedTitle,actualTitle);
+
+		test = reports.createTest("clickOpenMenu_$About$Option_OpenedLinkedPage");
+		Thread.sleep(100);
 		}
-		/*
-		@Test()
-		public void clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts() {}
+		
 		
 		@Test()
-		public void clickOpenMenu_$Logout$Option_LoggedoutUser() {}
+		public void clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnOpenMenuButton();
+			SwagLabsHomepage.clickOnAllItemsButton();
+			SwagLabsHomepage.clickOncloseMenuButton();
+			
+			ArrayList<String> aop = SwagLabsHomepage.sortByAscendingOrder();
+			List <WebElement> item = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
+			int size = item.size();
+			for(int i=0;i<size;i++) {
+				
+				String expectedProductBanner = aop.get(i);
+				String actualProductBanner = item.get(i).getText();
+				System.out.println("expectedProductBanner = "+expectedProductBanner);
+				System.out.println("actualProductBanner = "+actualProductBanner);
+				Assert.assertEquals(expectedProductBanner, actualProductBanner);
+				test = reports.createTest("clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts");
+			}
+			Thread.sleep(100);
+		}
+		
 		
 		@Test()
-		public void clickOpenMenu_$ResetAppState$Option_DefaultAppState() {}
+		public void clickOpenMenu_$Logout$Option_LoggedoutUser() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnOpenMenuButton();
+			SwagLabsHomepage.clickOnlogoutButton();
+			String actualTitle = SwagLabsHomepage.getTitle(driver);
+			String expectedTitle = "Swag Labs";
+			System.out.println("expectedTitle = "+expectedTitle);
+			System.out.println("actualTitle = "+actualTitle);
+			Assert.assertEquals(expectedTitle,actualTitle);
+			test = reports.createTest("clickOpenMenu_$Logout$Option_LoggedoutUser");
+			Thread.sleep(100);
+		}
+		
 		
 		@Test()
-		public void clickOpenMenu_CloseMenuButton_ClosedAllOptions() {}
+		public void clickOpenMenu_$ResetAppState$Option_DefaultAppState() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnSingleAddToCart();
+			
+			SwagLabsHomepage.clickOnOpenMenuButton();
+			SwagLabsHomepage.clickOnresetAppStateButton();
+			SwagLabsHomepage.clickOncloseMenuButton();		
+			
+			boolean expectedReset = true;
+			boolean actualReset = false;
+			
+			 try {
+				 int items = SwagLabsHomepage.countCartItem();				 
+				 }
+			catch(Exception e)
+			     {
+				 	actualReset = true;
+					e.printStackTrace();
+			     }
+			System.out.println("expectedReset = "+expectedReset);
+			System.out.println("actualReset = "+actualReset);
+			
+			Assert.assertEquals(expectedReset,actualReset);
+			test = reports.createTest("clickOpenMenu_$ResetAppState$Option_DefaultAppState");
+			Thread.sleep(100);
+		}
 		
 		
-		
+		@Test()
+		public void clickOpenMenu_CloseMenuButton_ClosedAllOptions() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			
+			SwagLabsHomepage.clickOnOpenMenuButton();
+			SwagLabsHomepage.clickOncloseMenuButton();	
+			
+			
+			String button = driver.findElement(By.xpath("//button[text()='Close Menu']")).getAttribute("tabindex");
+			boolean expectedValue = true;
+			boolean actualValue = false;
+			
+			if(button.equals("-1")) {
+				
+				actualValue = true;
+			}
+			
+			 System.out.println("button = "+button);
+			 System.out.println("expectedValue = "+expectedValue);
+			 System.out.println("actualValue = "+actualValue);
+				
+			 Assert.assertEquals(expectedValue,actualValue);
+			 test = reports.createTest("clickOpenMenu_CloseMenuButton_ClosedAllOptions");
+			 Thread.sleep(100);
+		}
+		*/
 		
 		
 		
@@ -347,7 +441,7 @@ import utility.ExtentReport;
 		@Test()
 		public void clickTwitterTab_SocialSite_OpenedTwitterPage() {}
 		
-		
+		/*
 		@Test()
 		public void clickFacebookTab_SocialSite_OpenedFacebookPage() {}
 		

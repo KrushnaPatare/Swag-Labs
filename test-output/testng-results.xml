@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-06T11:56:47 IST" name="Suite" finished-at="2023-03-06T11:57:04 IST" duration-ms="16585">
+  <suite started-at="2023-03-06T19:30:53 IST" name="Suite" finished-at="2023-03-06T19:31:00 IST" duration-ms="7512">
     <groups>
     </groups>
-    <test started-at="2023-03-06T11:56:47 IST" name="Test" finished-at="2023-03-06T11:57:04 IST" duration-ms="16585">
+    <test started-at="2023-03-06T19:30:53 IST" name="Test" finished-at="2023-03-06T19:31:00 IST" duration-ms="7512">
       <class name="test.SwagLabs2HomepageTest">
-        <test-method is-config="true" signature="configureReport()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T11:56:47 IST" name="configureReport" finished-at="2023-03-06T11:56:48 IST" duration-ms="947" status="PASS">
+        <test-method is-config="true" signature="configureReport()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T19:30:53 IST" name="configureReport" finished-at="2023-03-06T19:30:53 IST" duration-ms="438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReport -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T11:56:48 IST" name="openInventorypage" finished-at="2023-03-06T11:57:02 IST" duration-ms="14037" status="PASS">
+        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T19:30:53 IST" name="openInventorypage" finished-at="2023-03-06T19:30:59 IST" duration-ms="5512" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openInventorypage -->
-        <test-method signature="clickOpenMenu_Clickable_OpenedAllOptions()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T11:57:02 IST" name="clickOpenMenu_Clickable_OpenedAllOptions" finished-at="2023-03-06T11:57:03 IST" duration-ms="461" status="PASS">
+        <test-method signature="clickOpenMenu_CloseMenuButton_ClosedAllOptions()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T19:30:59 IST" name="clickOpenMenu_CloseMenuButton_ClosedAllOptions" finished-at="2023-03-06T19:30:59 IST" duration-ms="537" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOpenMenu_Clickable_OpenedAllOptions -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T11:57:03 IST" name="publishResult" finished-at="2023-03-06T11:57:03 IST" duration-ms="356" status="PASS">
+        </test-method> <!-- clickOpenMenu_CloseMenuButton_ClosedAllOptions -->
+        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T19:30:59 IST" name="publishResult" finished-at="2023-03-06T19:31:00 IST" duration-ms="336" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickOpenMenu_Clickable_OpenedAllOptions status=SUCCESS method=SwagLabs2HomepageTest.clickOpenMenu_Clickable_OpenedAllOptions()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5] output={null}]]]>
+                <![CDATA[[TestResult name=clickOpenMenu_CloseMenuButton_ClosedAllOptions status=SUCCESS method=SwagLabs2HomepageTest.clickOpenMenu_CloseMenuButton_ClosedAllOptions()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="createReport()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T11:57:03 IST" name="createReport" finished-at="2023-03-06T11:57:04 IST" duration-ms="647" status="PASS">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:test.SwagLabs2HomepageTest@52bf72b5]" started-at="2023-03-06T19:31:00 IST" name="createReport" finished-at="2023-03-06T19:31:00 IST" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SwagLabsHomepage {
 	
-	
+		@FindBy (tagName = "title") private WebElement title;
 		@FindBy (xpath = "//div[@class='app_logo']") private WebElement SwagLabsLogo;
 		@FindBy (xpath = "//select[@class='product_sort_container']") private WebElement sortDropdown;
 
@@ -27,7 +27,7 @@ public class SwagLabsHomepage {
 		@FindBy (xpath = "(//button[text()='Add to cart'])") private List<WebElement> totalAddToCartButton;
 		@FindBy (xpath = "(//button[text()='Remove'])[1]") private WebElement removeButton;
 
-		@FindBy (xpath = "//span[@class='shopping_cart_badge']") private WebElement cartItemCounter;
+		@FindBy (xpath = "//span[@class='shopping_cart_badge']") private WebElement cartItemCounterNotification;
 		@FindBy (xpath = "(//button[text()='Add to cart'])[1]") private WebElement addToCartSingle;
 		@FindBy (xpath = "//option[text()='Price (high to low)']") private WebElement sortHighToLow;
 		@FindBy (xpath = "//a[text()='Twitter']") private WebElement twitterButton;
@@ -51,6 +51,12 @@ public class SwagLabsHomepage {
 			return value;
 		}
 
+		public String getTitle(WebDriver driver) {
+			
+			String pageTitle = driver.getTitle();
+			return pageTitle;
+		}
+		
 		public List <String> clickOnOpenMenuButton() {
 			
 			openMenuButton.click();
@@ -63,7 +69,7 @@ public class SwagLabsHomepage {
 			return actOpAll;
 		}
 		
-		public void clickAllItemsButton() {
+		public void clickOnAllItemsButton() {
 			
 			allItemsButton.click();
 		}
@@ -221,10 +227,11 @@ public class SwagLabsHomepage {
 		
 
 		
-		public String countCartItem() {
+		public int countCartItem() {
 			
-			String Items = cartItemCounter.getText();
-			return Items;
+			String Items = cartItemCounterNotification.getText();
+			int itemNum = Integer.parseInt(Items);
+			return itemNum;
 		}
 		
 		public void addAllProductsToCart() {
