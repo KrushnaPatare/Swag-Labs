@@ -51,9 +51,16 @@ public class SwagLabsHomepage {
 			return value;
 		}
 
-		public void clickOnOpenMenuButton() {
+		public List <String> clickOnOpenMenuButton() {
 			
 			openMenuButton.click();
+			ArrayList<String> actOpAll = new ArrayList<String>();
+			actOpAll.add(allItemsButton.getText());
+			actOpAll.add(aboutButton.getText());
+			actOpAll.add(logoutButton.getText());
+			actOpAll.add(resetAppStateButton.getText());
+			actOpAll.add(closeMenuButton.getText());
+			return actOpAll;
 		}
 		
 		public void clickAllItemsButton() {

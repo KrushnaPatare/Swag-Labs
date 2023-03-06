@@ -296,14 +296,36 @@ import utility.ExtentReport;
 		
 		
 		@Test()
-		public void clickOpenMenu_Clickable_OpenedOptions() {}
+		public void clickOpenMenu_Clickable_OpenedAllOptions() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			List<String> actOpAll = SwagLabsHomepage.clickOnOpenMenuButton();
+			ArrayList<String> expOpAll = new ArrayList<String>();
+			expOpAll.add("All Items");
+			expOpAll.add("About");
+			expOpAll.add("Logout");
+			expOpAll.add("Reset App State");
+			expOpAll.add("Close Menu");
+			
+			int size = expOpAll.size();
+			for(int i=0; i<size; i++) {
+				String expectedOptions = expOpAll.get(i);
+				String actualOptions = actOpAll.get(i);
+				System.out.println("expectedOptions = "+expectedOptions);
+				System.out.println("actualOptions = "+actualOptions);
+				Assert.assertEquals(expectedOptions,actualOptions);
+			}
+			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
+			Thread.sleep(100);
+		}
+		
+		
+		@Test()
+		public void clickOpenMenu_$About$Option_OpenedLinkedPage() {
+			
+			
+		}
 		/*
-		@Test()
-		public void clickOpenMenu_OptionsList_CheckedAllOptions() {}
-		
-		@Test()
-		public void clickOpenMenu_$About$Option_OpenedLinkedPage() {}
-		
 		@Test()
 		public void clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts() {}
 		
