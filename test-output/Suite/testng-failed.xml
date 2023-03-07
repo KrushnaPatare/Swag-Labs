@@ -8,8 +8,8 @@
         <methods>
           <include name="configureReport"/>
           <include name="openInventorypage"/>
+          <include name="verifyHomepageFooter_Text_Checked"/>
           <include name="createReport"/>
-          <include name="clickLinkedTab_SocialSite_OpenedLinkedPage"/>
           <include name="publishResult"/>
         </methods>
       </class> <!-- test.SwagLabs2HomepageTest -->

@@ -29,8 +29,6 @@ import utility.ExtentReport;
 @Listeners(utility.Listeners.class)
 	public class SwagLabs2HomepageTest extends BaseClass {
 		
-		
-		
 		ExtentReports reports;
 		ExtentTest test;
 		
@@ -52,7 +50,7 @@ import utility.ExtentReport;
 			swagLabsLoginPage.clickOnLogin();
 		    Thread.sleep(1000);
 		}
-	/*	
+
 
 		@Test(priority=1)
 		public void verifyHomepage_LogoPresendAndSpelling_Checked() throws InterruptedException {
@@ -116,10 +114,7 @@ import utility.ExtentReport;
 				Thread.sleep(100);
 		}
 		
-
-	
-		
-		@Test()
+		@Test(priority=4)
 		public void clickSort_PriceHighToLow_GotInOrder() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -141,7 +136,7 @@ import utility.ExtentReport;
 		}
 	
 		
-		@Test(priority=8)
+		@Test(priority=5)
 		public void clickSort_PriceLowToHigh_GotInOrder() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -162,7 +157,7 @@ import utility.ExtentReport;
 			Thread.sleep(100);	
 		}
 		
-		@Test()
+		@Test(priority=6)
 		public void clickSort_ProductDescending_GotInOrder() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -182,11 +177,11 @@ import utility.ExtentReport;
 			Thread.sleep(100);
 		}
 			
-		@Test(priority=6)
+		@Test(priority=7)
 		public void clickSort_ProductAscending_GotInOrder() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
-			SwagLabsHomepage.sortByAscendingOrder();
+			ArrayList<String> aop = SwagLabsHomepage.sortByAscendingOrder();
 			
 			List <WebElement> item = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
 			int size = item.size();
@@ -203,7 +198,7 @@ import utility.ExtentReport;
 		}
 	
 		
-		@Test()
+		@Test(priority=8)
 		public void clickSort_ProductCountAfter_RemainedSame() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -219,7 +214,7 @@ import utility.ExtentReport;
 			Thread.sleep(100);
 		}
 		
-		@Test()
+		@Test(priority=9)
 		public void clickSort_ProductsBefore_PredefinedNumber() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -237,7 +232,7 @@ import utility.ExtentReport;
 
 		
 		
-		@Test()
+		@Test(priority=10)
 		public void clickSort_ProductOrder_UnarrangedLikeBefore() throws InterruptedException {
 
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -251,7 +246,7 @@ import utility.ExtentReport;
 			Thread.sleep(100);
 		}
 		
-		@Test()
+		@Test(priority=11)
 		public void clickSortBefore_DoOtherActions_SavedSortingType() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -268,11 +263,11 @@ import utility.ExtentReport;
 		}
 		
 		
-		@Test()
+		@Test(priority=12)
 		public void clickSortAfter_PreviousSortedResults_GotSortedAgain() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
-			ArrayList<String> aop = SwagLabsHomepage.sortByDescendingOrder();
+			SwagLabsHomepage.sortByDescendingOrder();
 			ArrayList<String> asc =SwagLabsHomepage.sortByAscendingOrder();
 
 			List <WebElement> item = driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
@@ -288,14 +283,9 @@ import utility.ExtentReport;
 			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
 				Thread.sleep(100);
 		}
+
 		
-		
-		
-		
-		
-		
-		
-		@Test()
+		@Test(priority=13)
 		public void clickOpenMenu_Clickable_OpenedAllOptions() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -320,7 +310,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		@Test()
+		@Test(priority=14)
 		public void clickOpenMenu_$About$Option_OpenedLinkedPage() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -337,7 +327,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		@Test()
+		@Test(priority=15)
 		public void clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -361,7 +351,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		@Test()
+		@Test(priority=16)
 		public void clickOpenMenu_$Logout$Option_LoggedoutUser() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -377,7 +367,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		@Test()
+		@Test(priority=17)
 		public void clickOpenMenu_$ResetAppState$Option_DefaultAppState() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -407,7 +397,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		@Test()
+		@Test(priority=18)
 		public void clickOpenMenu_CloseMenuButton_ClosedAllOptions() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -435,10 +425,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		
-		
-		
-		@Test()
+		@Test(priority=19)
 		public void clickTwitterTab_SocialSite_OpenedTwitterPage() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -455,9 +442,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		
-		
-		@Test()
+		@Test(priority=20)
 		public void clickFacebookTab_SocialSite_OpenedFacebookPage() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -474,8 +459,7 @@ import utility.ExtentReport;
 		}
 		
 		
-		
-		@Test()
+		@Test(priority=21)
 		public void clickLinkedTab_SocialSite_OpenedLinkedPage() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
@@ -490,162 +474,60 @@ import utility.ExtentReport;
 			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
 			Thread.sleep(100);
 		}
-		*/
 		
 		
-		
-		
-		@Test()
-		public void verifyCartTab_TotalProductNumber_ShowedInNotification(){
-			
-			
-			
-			
-			
-			
-			
-		}
-		
-		/*
-		@Test()
-		public void verifyProduct_TitleAndDescriptionAndPrice_Checked() {}
-		
-		
-		@Test()
-		public void verifyProducts_Same$ActualAndGiven_ShownOnScreen() {}
-		
-		
-		@Test()
-		public void verifyProducts_AddAction_AddedToCart() {}
-		
-		
-		@Test()
-		public void verifyProducts_RemoveAction_RemovedFromCart() {}
-		
-		@Test()
-		public void verifyHomepageFooter_Text_Checked() {}
-		
-		@Test()
-		public void verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully() {}
-		*/
-		
-		
-		
-		
-//		@Test
-//		public void addToCart() {
-//			
-//			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-//			SwagLabsInventoryPage.clickOnAddToCart();
-//			String actualItems = SwagLabsInventoryPage.countItem();
-//			String expectedItem = "6";
-//			Assert.assertEquals(actualItems, expectedItem);
-//			System.out.println(actualItems);
-//			System.out.println(expectedItem);
-//			test = reports.createTest("addToCart");
-//		}
-/*		
-		@Test
-		public void selectDropdown() throws InterruptedException {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			SwagLabsInventoryPage.sort();
-			Thread.sleep(10000);
-			String actualHighCost = driver.findElement(By.xpath("(//div[@class='inventory_item_price'])[1]")).getText();
-			String expectedHighCost = "$49.99";
-			System.out.println(actualHighCost);
-			System.out.println(expectedHighCost);
-			Assert.assertEquals(actualHighCost, expectedHighCost);
-			test = reports.createTest("selectDropdown");
+		@Test(priority=22)
+		public void verifyCartTab_TotalProductNumber_ShowedInNotification() throws InterruptedException{
 
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnSingleAddToCart();
+			Thread.sleep(2000);
+			int actualNum = SwagLabsHomepage.countCartItem();
+			int expectedNum = 1;
+			System.out.println("actualNum = "+actualNum);
+			System.out.println("expectedNum = "+expectedNum);
 			
+			Assert.assertEquals(expectedNum, actualNum);
+			
+			
+			test = reports.createTest("verifyCartTab_TotalProductNumber_ShowedInNotification");
+			Thread.sleep(100);
+		}
+			
+		
+		
+		@Test(priority=23)
+		public void verifyHomepageFooter_Text_Checked() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			String actualFooter = SwagLabsHomepage.getFooter();
+			String expectedFooter = "© 2023 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy";
+			
+			System.out.println("actualFooter = "+actualFooter);
+			System.out.println("expectedFooter = "+expectedFooter);
+			
+			Assert.assertEquals(expectedFooter, actualFooter);
+			
+			test = reports.createTest("verifyHomepageFooter_Text_Checked");
+			Thread.sleep(100);
 		}
 		
-		@Test
-		public void removeFromCart() {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			String actualText = SwagLabsInventoryPage.clickOnRemove();
-			String expectedText = "ADD TO CART";
-			System.out.println(actualText);
-			System.out.println(expectedText);
-			Assert.assertEquals(actualText, expectedText);
-			test = reports.createTest("removeFromCart");
+		@Test(priority=24)
+		public void verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully() throws InterruptedException {
+		
+		driver.navigate().back();
+		driver.navigate().refresh();
+		driver.navigate().forward();
 
-		}
-		
-		@Test
-		public void openCart() {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			SwagLabsInventoryPage.clickOncartLink();
-			String expectedTitle = "https://www.saucedemo.com/cart.html";
-			String actualTitle = driver.getCurrentUrl();
-			System.out.println(actualTitle);
-			System.out.println(expectedTitle);
-			Assert.assertEquals(actualTitle, expectedTitle);
-			test = reports.createTest("openCart");
+		String actualUrl = driver.getCurrentUrl();
+		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 
-		}
-		
-		@Test
-		public void openBurgerButtonMenu() {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			SwagLabsInventoryPage.clickOnOpenMenuButton();
-//			String actualOption1 = driver.findElement(By.xpath("(//a[@class='bm-item menu-item'])[1]")).getText();
-//			String expectedOption1 = "";
-//			System.out.println(actualOption1);
-//			System.out.println(expectedOption1);
-			
-			String actualClose = driver.findElement(By.xpath("//button[text()='Close Menu']")).getText();
-			String expectedClose = "Close Menu";
-			System.out.println(actualClose);
-			System.out.println(expectedClose);
-			Assert.assertEquals(actualClose, expectedClose);
-			test = reports.createTest("openBurgerButtonMenu");
-		}
-		
-		@Test
-         public void openTwitterPage() {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			SwagLabsInventoryPage.clickOnTwitterButton(driver);
-			String expectedUrl = "https://twitter.com/saucelabs";
-			String actualUrl = driver.getCurrentUrl();
-			System.out.println(actualUrl);
-			System.out.println(expectedUrl);
-			Assert.assertEquals(actualUrl, expectedUrl);
-			test = reports.createTest("openTwitterPage");
-		}
-		
-		@Test()
-         public void openFacebookPage() {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			SwagLabsInventoryPage.clickOnFacebookButton(driver);
-			String expectedUrl = "https://www.facebook.com/saucelabs";
-			String actualUrl = driver.getCurrentUrl();
-			System.out.println(actualUrl);
-			System.out.println(expectedUrl);
-			Assert.assertEquals(actualUrl, expectedUrl);
-			test = reports.createTest("openFacebookPage");
-			driver.close();
-		}
-		
-		@Test(dependsOnMethods= {"openFacebookPage"})
-        public void openLinkedinPage() {
-			
-			SwagLabsHomepage SwagLabsInventoryPage = new SwagLabsHomepage(driver);
-			SwagLabsInventoryPage.clickOnLinkedinButton(driver);
-			String expectedUrl = "https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFwiqSv2-rs9QAAAYSfJTaYYB0GXzaNySQxgnOtz-Lway-tsnac5KABBOfwtpgTF_0qHjp67PtfUkOtA3uT0w6hSM_rQaQ6_aV5K5vqjUuR7RRsr_i0_EuEZzuJRZ-QvspsHFQ=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fsauce-labs%2F";
-			String actualUrl = driver.getCurrentUrl();
-			System.out.println(actualUrl);
-			System.out.println(expectedUrl);
-			Assert.assertEquals(actualUrl, expectedUrl);
-			test = reports.createTest("openLinkedinPage");
-		}
-	*/
+		Assert.assertEquals(actualUrl, expectedUrl);
+
+		test = reports.createTest("verifyHomepageFooter_Text_Checked");
+		Thread.sleep(100);
+}
+	
 		
 		@AfterMethod
 		public void publishResult (ITestResult result) {
@@ -673,6 +555,5 @@ import utility.ExtentReport;
 		public void createReport() {
 			reports.flush();
 		}
-		
 	
 	}

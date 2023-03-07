@@ -37,6 +37,8 @@ public class SwagLabsHomepage {
 		@FindBy (xpath = "//a[text()='Twitter']") private WebElement twitterButton;
 		@FindBy (xpath = "//a[text()='Facebook']") private WebElement facebookButton;
 		@FindBy (xpath = "//a[text()='LinkedIn']") private WebElement linkedinButton;
+		@FindBy (xpath = "//div[@class='footer_copy']") private WebElement footer;
+
 		
 		public SwagLabsHomepage (WebDriver driver) {
 			
@@ -286,14 +288,17 @@ public class SwagLabsHomepage {
 			return itemNum;
 		}
 		
-		public void addAllProductsToCart() {
+		public int addAllProductsToCart() {
 			
-			for(int i=5;i>=0;i--)
+			int size = totalAddToCartButton.size();
+			for(int i=size-1;i>=0;i--)
 			{
 				WebElement addToCart = totalAddToCartButton.get(i);
 				addToCart.click();
 			}
-			
+			String Items = cartItemCounterNotification.getText();
+			int itemNum = Integer.parseInt(Items);
+			return itemNum;
 	    }
 	
 		public int countProduct() {
@@ -307,11 +312,11 @@ public class SwagLabsHomepage {
 			return count;
 		 }
 	
-		public select selectSortDropdown(){
+		public String getFooter() {
 			
-		
+			String ft = footer.getText();
+			return ft;
 		}
-	
 	
 
 }
