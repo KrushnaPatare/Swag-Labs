@@ -6,10 +6,10 @@
     <classes>
       <class name="test.SwagLabs2HomepageTest">
         <methods>
-          <include name="clickOpenMenu_CloseMenuButton_ClosedAllOptions"/>
           <include name="configureReport"/>
           <include name="openInventorypage"/>
           <include name="createReport"/>
+          <include name="clickLinkedTab_SocialSite_OpenedLinkedPage"/>
           <include name="publishResult"/>
         </methods>
       </class> <!-- test.SwagLabs2HomepageTest -->

@@ -433,28 +433,80 @@ import utility.ExtentReport;
 			 test = reports.createTest("clickOpenMenu_CloseMenuButton_ClosedAllOptions");
 			 Thread.sleep(100);
 		}
+		
+		
+		
+		
+		
+		@Test()
+		public void clickTwitterTab_SocialSite_OpenedTwitterPage() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnTwitterButton(driver);
+			String expectedUrl = "https://twitter.com/saucelabs";
+			String actualUrl = driver.getCurrentUrl();
+			
+			System.out.println("actualUrl = "+actualUrl);
+			System.out.println("expectedUrl = "+expectedUrl);
+			
+			Assert.assertEquals(actualUrl, expectedUrl);
+			test = reports.createTest("clickTwitterTab_SocialSite_OpenedTwitterPage");
+			Thread.sleep(100);
+		}
+		
+		
+		
+		
+		@Test()
+		public void clickFacebookTab_SocialSite_OpenedFacebookPage() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnFacebookButton(driver);
+			String expectedUrl = "https://www.facebook.com/saucelabs";
+			String actualUrl = driver.getCurrentUrl();
+			
+			System.out.println("actualUrl = "+actualUrl);
+			System.out.println("expectedUrl = "+expectedUrl);
+			
+			Assert.assertEquals(actualUrl, expectedUrl);
+			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
+			Thread.sleep(100);
+		}
+		
+		
+		
+		@Test()
+		public void clickLinkedTab_SocialSite_OpenedLinkedPage() throws InterruptedException {
+			
+			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+			SwagLabsHomepage.clickOnLinkedinButton(driver);
+			String expectedUrl = "https://www.linkedin.com/company/sauce-labs/?original_referer=";
+			String actualUrl = driver.getCurrentUrl();
+			
+			System.out.println("actualUrl = "+actualUrl);
+			System.out.println("expectedUrl = "+expectedUrl);
+			
+			Assert.assertEquals(actualUrl, expectedUrl);
+			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
+			Thread.sleep(100);
+		}
 		*/
 		
 		
 		
 		
 		@Test()
-		public void clickTwitterTab_SocialSite_OpenedTwitterPage() {}
+		public void verifyCartTab_TotalProductNumber_ShowedInNotification(){
+			
+			
+			
+			
+			
+			
+			
+		}
 		
 		/*
-		@Test()
-		public void clickFacebookTab_SocialSite_OpenedFacebookPage() {}
-		
-		@Test()
-		public void clickLinkedTab_SocialSite_OpenedLinkedPage() {}
-		
-		
-		
-		
-		
-		@Test()
-		public void verifyCartTab_TotalProductNumber_ShowedInNotification(){}
-		
 		@Test()
 		public void verifyProduct_TitleAndDescriptionAndPrice_Checked() {}
 		

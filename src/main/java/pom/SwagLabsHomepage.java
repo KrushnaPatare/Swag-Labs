@@ -1,7 +1,11 @@
 package pom;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -105,19 +109,67 @@ public class SwagLabsHomepage {
 		}
 		
 		
-		public void clickOnTwitterButton() {
+		public void clickOnTwitterButton(WebDriver driver ) {
 			
 			twitterButton.click();
+			Set<String> handles = driver.getWindowHandles();
+			Iterator<String> a = handles.iterator();
+			
+			while (a.hasNext()){
+		    	
+		    	String handle = a.next();
+		    	driver.switchTo().window(handle);
+		    	
+		    	String expectedUrl = "https://twitter.com/saucelabs";
+		    	String actualUrl = driver.getCurrentUrl();
+
+		    	if(expectedUrl.equals(actualUrl)){
+		    		
+		    		break;
+		    	}
+			}
 		}
 		
-		public void clickOnFacebookButton() {
+		public void clickOnFacebookButton(WebDriver driver) {
 			
 			facebookButton.click();
+			Set<String> handles = driver.getWindowHandles();
+			Iterator<String> a = handles.iterator();
+			
+			while (a.hasNext()){
+		    	
+		    	String handle = a.next();
+		    	driver.switchTo().window(handle);
+		    	
+		    	String expectedUrl = "https://www.facebook.com/saucelabs";
+		    	String actualUrl = driver.getCurrentUrl();
+
+		    	if(expectedUrl.equals(actualUrl)){
+		    		
+		    		break;
+		    	}
+			}
 		}
 		
-		public void clickOnLinkedinButton() {
+		public void clickOnLinkedinButton(WebDriver driver) {
 			
 			linkedinButton.click();
+			Set<String> handles = driver.getWindowHandles();
+			Iterator<String> a = handles.iterator();
+			
+			while (a.hasNext()){
+		    	
+		    	String handle = a.next();
+		    	driver.switchTo().window(handle);
+		    	
+		    	String expectedUrl = "https://www.linkedin.com/company/sauce-labs/?original_referer=";
+		    	String actualUrl = driver.getCurrentUrl();
+
+		    	if(expectedUrl.equals(actualUrl)){
+		    		
+		    		break;
+		    	}
+			}
 		}
 		
 		public String clickOnSingleAddToCart() {
