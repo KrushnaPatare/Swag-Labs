@@ -2,6 +2,7 @@ package pojo;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -14,7 +15,9 @@ public class Browser {
 		
 		if(browser.equals("chrome"))
 		{ WebDriverManager.chromedriver().setup();
-		    driver = new ChromeDriver(); }
+		     ChromeOptions options = new ChromeOptions();
+		     options.addArguments("--remote-allow-origins=*");
+		    driver = new ChromeDriver(options); }
 		
 		else if(browser.equals("edge"))
 		{ WebDriverManager.edgedriver().setup();

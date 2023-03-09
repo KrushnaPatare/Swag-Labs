@@ -210,14 +210,7 @@ public class SwagLabsHomepage {
 		}
 		
 	
-		
-		public void clickProductImage() {
-			
-		}
-		
-		public void clickProductBanner() {
-			
-		}
+
 		
 		public ArrayList<String> sortByHighToLowPrice() {
 			

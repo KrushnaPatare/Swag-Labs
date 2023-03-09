@@ -1,5 +1,7 @@
 package test;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -14,6 +16,7 @@ import com.aventstack.extentreports.Status;
 
 import pojo.Browser;
 import pom.SwagLabsLoginPage;
+import pom.SwagLabsProductpage;
 import utility.BaseClass;
 import utility.ExtentReport;
 
@@ -39,36 +42,106 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		swagLabsLoginPage.enterUsername("standard_user");
 	    swagLabsLoginPage.enterPassword("secret_sauce");
 		swagLabsLoginPage.clickOnLogin();
-	    Thread.sleep(1000);
+	    
+	}
+	/*
+	@Test()
+	public void clickProduct_ProductImg_OpenedProductpage() throws InterruptedException {
+		
+		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+		swagLabsProductpage.clickProductImage();
+		
+		String actualUrl = driver.getCurrentUrl();
+		String expectedUrl = "https://www.saucedemo.com/inventory-item.html?id=4";
+		
+		System.out.println("expectedUrl = "+expectedUrl);
+		System.out.println("actualUrl = "+actualUrl);
+		
+		Assert.assertEquals(expectedUrl, actualUrl);
+		
+		test = reports.createTest("clickProduct_ProductImg_OpenedProductpage");
+		Thread.sleep(100);
 	}
 	
+	
 	@Test()
-	public void clickProduct_ProductImg_Checked() {
+	public void clickProduct_ProductBanner_OpenedProductpage() throws InterruptedException {
+		
+		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+		swagLabsProductpage.clickProductBanner();
+		
+		String actualUrl = driver.getCurrentUrl();
+		String expectedUrl = "https://www.saucedemo.com/inventory-item.html?id=4";
+		
+		System.out.println("expectedUrl = "+expectedUrl);
+		System.out.println("actualUrl = "+actualUrl);
+		
+		Assert.assertEquals(expectedUrl, actualUrl);
+		
+		test = reports.createTest("clickProduct_ProductBanner_OpenedProductpage");
+		Thread.sleep(100);
+		
+	}
+	
+	
+	@Test()
+	public void clickProduct_ProductBanner$Description$Price_Checked() throws InterruptedException {
+		
+		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+		swagLabsProductpage.clickProductBanner();
+		String actualDescription = swagLabsProductpage.getProductDescription();
+		String expectedDescription = "Sauce Labs Backpack\r\n"
+				+ "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.\r\n"
+				+ "$29.99\r\n"
+				+ "Add to cart";
+		
+		System.out.println("expectedDescription = "+expectedDescription);
+		System.out.println("actualDescription = "+actualDescription);
+		
+		Assert.assertEquals(expectedUrl, actualUrl);
+		
+		test = reports.createTest("public void doLogin_1ValidId2ValidPwd_OpenedHomepage");
+		Thread.sleep(100);
+	}
+	
+
+	@Test()
+	public void clickProduct_AddProductButton_AddedToCart() throws InterruptedException {
+		
+		
+		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+		swagLabsProductpage.clickProductImage();
+	
+		swagLabsProductpage.clickOnAddToCartButton();
+		
+		String actualText = swagLabsProductpage.getCartNotification();
+		String expectedText = "1";
+		
+		System.out.println("expectedText = "+expectedText);
+		System.out.println("actualText = "+actualText);
+		
+		Assert.assertEquals(expectedText, actualText);
+		
+		test = reports.createTest("clickProduct_AddProductButton_AddedToCart");
+		Thread.sleep(100);
+	}
+	*/
+	
+	@Test()
+	public void clickProduct_RemoveProductButton_RemovedFromCart() {
+		
+		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+		swagLabsProductpage.
+		
 		
 		
 		
 	}
-	
-	
+	/*
 	@Test()
-	public void clickProduct_ProductBanner$Description$Price_Checked() {}
+	public void clickProduct_ProductAddOrRemoveButton_Clickable() {}
 	
-	
-	@Test()
-	public void clickProduct_AddProductButton_AddedToCart() {}
-	
-	
-	@Test()
-	public void clickProduct_RemoveProductButton_RemovedFromCart() {}
-	
-	@Test()
-	public void clickProduct_ProductAddOrRemoveButton_AddedToCart() {}
-	
-	@Test()
-	public void clickProduct_Productpage_Opened() {
-		
-		
-	}
+
 	
 	@Test()
 	public void clickProduct_BackToProductsButton_GoneToHomepage() {
@@ -77,27 +150,11 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		
 	}
 	
-/*
-  		@Test()
-		public void verifyProduct_TitleAndDescriptionAndPrice_Checked() {}
-		
-		
-		@Test()
-		public void verifyProducts_Same$ActualAndGiven_ShownOnScreen() {}
-		
-		
-		@Test()
-		public void verifyProducts_AddAction_AddedToCart() {}
-		
-		
-		@Test()
-		public void verifyProducts_RemoveAction_RemovedFromCart() {}
-		
+	*/
+	
 	
 		
-		
-		*/
-		
+	
 	
 	
 	@AfterMethod
