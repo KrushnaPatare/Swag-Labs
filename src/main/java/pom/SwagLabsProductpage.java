@@ -12,6 +12,7 @@ public class SwagLabsProductpage {
 	@FindBy (xpath = "//div[@class='inventory_details_desc_container']") private WebElement productDescription;
 	@FindBy (xpath = "//button[@name='back-to-products']") private WebElement backToProductsButton;
 	@FindBy (xpath = "(//button)[4]") private WebElement addToCartButton;
+	@FindBy (xpath = "(//button)[4]") private WebElement removeButton;
 	@FindBy (tagName = "span") private WebElement shoppingCartBadge;
 	
 	
@@ -55,6 +56,13 @@ public class SwagLabsProductpage {
 
 		addToCartButton.click();
 		String text = addToCartButton.getText();
+		return text;
+	}
+	
+	public String clickOnRemoveButton() {
+
+		removeButton.click();
+		String text = removeButton.getText();
 		return text;
 	}
 

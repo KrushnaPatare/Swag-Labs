@@ -6,9 +6,9 @@
     <classes>
       <class name="test.SwagLabs3ProductpageTest">
         <methods>
+          <include name="clickProduct_ProductBanner$Description$Price_Checked"/>
           <include name="configureReport"/>
           <include name="openInventorypage"/>
-          <include name="clickProduct_AddProductButton_AddedToCart"/>
           <include name="publishResult"/>
           <include name="createReport"/>
         </methods>

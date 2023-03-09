@@ -1,6 +1,7 @@
 package test;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -44,7 +45,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		swagLabsLoginPage.clickOnLogin();
 	    
 	}
-	/*
+	
 	@Test()
 	public void clickProduct_ProductImg_OpenedProductpage() throws InterruptedException {
 		
@@ -82,7 +83,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		Thread.sleep(100);
 		
 	}
-	
+
 	
 	@Test()
 	public void clickProduct_ProductBanner$Description$Price_Checked() throws InterruptedException {
@@ -90,17 +91,17 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
 		swagLabsProductpage.clickProductBanner();
 		String actualDescription = swagLabsProductpage.getProductDescription();
-		String expectedDescription = "Sauce Labs Backpack\r\n"
-				+ "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.\r\n"
-				+ "$29.99\r\n"
-				+ "Add to cart";
+		String expectedDescription = "Sauce Labs Backpack\n"+
+				"carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.\n"
+				+"$29.99\n"
+				+"Add to cart";
 		
 		System.out.println("expectedDescription = "+expectedDescription);
 		System.out.println("actualDescription = "+actualDescription);
 		
-		Assert.assertEquals(expectedUrl, actualUrl);
+		Assert.assertEquals(expectedDescription, actualDescription);
 		
-		test = reports.createTest("public void doLogin_1ValidId2ValidPwd_OpenedHomepage");
+		test = reports.createTest("clickProduct_ProductBanner$Description$Price_Checked");
 		Thread.sleep(100);
 	}
 	
@@ -125,32 +126,78 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		test = reports.createTest("clickProduct_AddProductButton_AddedToCart");
 		Thread.sleep(100);
 	}
-	*/
+	
 	
 	@Test()
-	public void clickProduct_RemoveProductButton_RemovedFromCart() {
+	public void clickProduct_RemoveProductButton_RemovedFromCart() throws InterruptedException {
 		
 		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
-		swagLabsProductpage.
+		swagLabsProductpage.clickProductImage();
+		swagLabsProductpage.clickOnAddToCartButton();
+		Thread.sleep(1000);
+		swagLabsProductpage.clickOnRemoveButton();
+		boolean expectedCheck = true;
+		boolean actualCheck = false;
+		 try {
+				driver.findElement(By.xpath("span"));
+			 }
+		catch(NoSuchElementException e)
+		     {
+				actualCheck = true;
+				System.out.println("NoSuchElementException");
+		     }
 		
+		 System.out.println("expectedCheck = "+expectedCheck);
+		 System.out.println("actualCheck = "+actualCheck);
 		
-		
-		
+		 Assert.assertEquals(expectedCheck, actualCheck);
+			
+		 test = reports.createTest("clickProduct_RemoveProductButton_RemovedFromCart");
+		 Thread.sleep(100);
 	}
-	/*
-	@Test()
-	public void clickProduct_ProductAddOrRemoveButton_Clickable() {}
-	
 
 	
+	
 	@Test()
-	public void clickProduct_BackToProductsButton_GoneToHomepage() {
+	public void clickProduct_ProductAddOrRemoveButton_Clickable() throws InterruptedException {
 		
+			SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+			swagLabsProductpage.clickProductImage();
+	
+			String actualText = swagLabsProductpage.clickOnAddToCartButton();
+			String expectedText = "Remove";
 		
+			System.out.println("expectedText = "+expectedText);
+			System.out.println("actualText = "+actualText);
 		
+			Assert.assertEquals(expectedText, actualText);
+		
+			test = reports.createTest("clickProduct_ProductAddOrRemoveButton_Clickable");
+			Thread.sleep(100);
+	}
+		
+	
+	
+	@Test()
+	public void clickProduct_BackToProductsButton_GoneToHomepage() throws InterruptedException {
+		
+				SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
+				swagLabsProductpage.clickProductImage();
+				swagLabsProductpage.clickOnBackToProducts();
+				
+				String expextedUrl = "https://www.saucedemo.com/inventory.html";
+				String actualUrl = driver.getCurrentUrl();
+				
+				System.out.println("expextedUrl = "+expextedUrl);
+				System.out.println("actualUrl = "+actualUrl);
+				
+				Assert.assertEquals(expextedUrl, actualUrl);
+				
+				test = reports.createTest("clickProduct_BackToProductsButton_GoneToHomepage");
+				Thread.sleep(100);
 	}
 	
-	*/
+	
 	
 	
 		
