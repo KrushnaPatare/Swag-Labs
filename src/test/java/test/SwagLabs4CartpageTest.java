@@ -52,12 +52,7 @@ public class SwagLabs4CartpageTest extends BaseClass{
 		 swagLabsProductpage.clickOnCartButton();
 	}
 
-	/*
-	
-	
-	
-	
-	
+
 	@Test(priority=1)
 	public void clickCart_AddedProducts_ShowedDetails() throws InterruptedException {
 		
@@ -82,7 +77,7 @@ public class SwagLabs4CartpageTest extends BaseClass{
 	
 	
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void clickCart_AddedProducts_Removed() throws InterruptedException {
 		
 		SwagLabsCartPage swagLabsCartPage = new SwagLabsCartPage(driver);
@@ -107,13 +102,13 @@ public class SwagLabs4CartpageTest extends BaseClass{
 			test = reports.createTest("clickCart_AddedProducts_Removed");
 			Thread.sleep(100);
 	}
-	*/
+	
 	
 	
 	
 
 	
-	@Test()
+	@Test(priority=3)
 	public void clickCart_ContinueShoppingButton_RedirectedToHomepage() throws InterruptedException {
 		
 		SwagLabsCartPage swagLabsCartPage = new SwagLabsCartPage(driver);
@@ -126,20 +121,31 @@ public class SwagLabs4CartpageTest extends BaseClass{
 		
 		Assert.assertEquals(expectedUrl, actualUrl);
 		
-		test = reports.createTest("clickCart_AddedProducts_Removed");
+		test = reports.createTest("clickCart_ContinueShoppingButton_RedirectedToHomepage");
 		Thread.sleep(100);
 		
 		
 	}
 	
-	/*
+
 	
-	@Test(priority=5)
-	public void clickCart_CheckoutButton_OpenedCheckoutpage() {
-			
+	@Test(priority=4)
+	public void clickCart_CheckoutButton_OpenedCheckoutpage() throws InterruptedException {
+		
+		SwagLabsCartPage swagLabsCartPage = new SwagLabsCartPage(driver);
+		swagLabsCartPage.clickOnCheckoutButton();
+		
+		String actualUrl = driver.getCurrentUrl();
+		String expectedUrl = "https://www.saucedemo.com/checkout-step-one.html";
+		
+		System.out.println("expectedUrl = "+expectedUrl);
+		System.out.println("actualUrl = "+actualUrl);
+		
+		test = reports.createTest("clickCart_ContinueShoppingButton_RedirectedToHomepage");
+		Thread.sleep(100);
 		}
 		
-		*/
+		
 	
 	@AfterMethod
 	public void publishResult (ITestResult result) {

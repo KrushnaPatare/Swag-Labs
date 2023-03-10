@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-10T15:17:28 IST" name="Suite" finished-at="2023-03-10T15:17:35 IST" duration-ms="6984">
+  <suite started-at="2023-03-10T17:21:54 IST" name="Suite" finished-at="2023-03-10T17:22:06 IST" duration-ms="12474">
     <groups>
     </groups>
-    <test started-at="2023-03-10T15:17:28 IST" name="Test" finished-at="2023-03-10T15:17:35 IST" duration-ms="6984">
+    <test started-at="2023-03-10T17:21:54 IST" name="Test" finished-at="2023-03-10T17:22:06 IST" duration-ms="12474">
       <class name="test.SwagLabs4CartpageTest">
-        <test-method is-config="true" signature="configureReport()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:28 IST" name="configureReport" finished-at="2023-03-10T15:17:29 IST" duration-ms="457" status="PASS">
+        <test-method is-config="true" signature="configureReport()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T17:21:54 IST" name="configureReport" finished-at="2023-03-10T17:21:55 IST" duration-ms="688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReport -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:29 IST" name="launchBrowser" finished-at="2023-03-10T15:17:34 IST" duration-ms="5314" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T17:21:55 IST" name="launchBrowser" finished-at="2023-03-10T17:22:05 IST" duration-ms="10051" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="clickCart_ContinueShoppingButton_RedirectedToHomepage()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:34 IST" name="clickCart_ContinueShoppingButton_RedirectedToHomepage" finished-at="2023-03-10T15:17:34 IST" duration-ms="277" status="PASS">
+        <test-method signature="clickCart_CheckoutButton_OpenedCheckoutpage()[pri:5, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T17:22:05 IST" name="clickCart_CheckoutButton_OpenedCheckoutpage" finished-at="2023-03-10T17:22:05 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickCart_ContinueShoppingButton_RedirectedToHomepage -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:34 IST" name="publishResult" finished-at="2023-03-10T15:17:35 IST" duration-ms="285" status="PASS">
+        </test-method> <!-- clickCart_CheckoutButton_OpenedCheckoutpage -->
+        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T17:22:05 IST" name="publishResult" finished-at="2023-03-10T17:22:05 IST" duration-ms="407" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickCart_ContinueShoppingButton_RedirectedToHomepage status=SUCCESS method=SwagLabs4CartpageTest.clickCart_ContinueShoppingButton_RedirectedToHomepage()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0] output={null}]]]>
+                <![CDATA[[TestResult name=clickCart_CheckoutButton_OpenedCheckoutpage status=SUCCESS method=SwagLabs4CartpageTest.clickCart_CheckoutButton_OpenedCheckoutpage()[pri:5, instance:test.SwagLabs4CartpageTest@515aebb0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="createReport()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:35 IST" name="createReport" finished-at="2023-03-10T15:17:35 IST" duration-ms="596" status="PASS">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T17:22:05 IST" name="createReport" finished-at="2023-03-10T17:22:06 IST" duration-ms="903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->

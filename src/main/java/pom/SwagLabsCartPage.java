@@ -33,7 +33,10 @@ public class SwagLabsCartPage {
 		continueShoppingButton.click();
 	}
 	
-	
+	public void clickOnCheckoutButton() {
+		
+	checkoutButton.click();
+	}
 	
 	
 	
