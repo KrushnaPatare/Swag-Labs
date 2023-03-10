@@ -1,154 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-09T22:26:29 IST" name="Suite" finished-at="2023-03-09T22:27:00 IST" duration-ms="30839">
+  <suite started-at="2023-03-10T15:17:28 IST" name="Suite" finished-at="2023-03-10T15:17:35 IST" duration-ms="6984">
     <groups>
     </groups>
-    <test started-at="2023-03-09T22:26:29 IST" name="Test" finished-at="2023-03-09T22:27:00 IST" duration-ms="30839">
-      <class name="test.SwagLabs3ProductpageTest">
-        <test-method is-config="true" signature="configureReport()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:29 IST" name="configureReport" finished-at="2023-03-09T22:26:29 IST" duration-ms="534" status="PASS">
+    <test started-at="2023-03-10T15:17:28 IST" name="Test" finished-at="2023-03-10T15:17:35 IST" duration-ms="6984">
+      <class name="test.SwagLabs4CartpageTest">
+        <test-method is-config="true" signature="configureReport()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:28 IST" name="configureReport" finished-at="2023-03-10T15:17:29 IST" duration-ms="457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configureReport -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:29 IST" name="openInventorypage" finished-at="2023-03-09T22:26:35 IST" duration-ms="5981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_AddProductButton_AddedToCart()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:35 IST" name="clickProduct_AddProductButton_AddedToCart" finished-at="2023-03-09T22:26:36 IST" duration-ms="515" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_AddProductButton_AddedToCart -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:36 IST" name="publishResult" finished-at="2023-03-09T22:26:36 IST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:29 IST" name="launchBrowser" finished-at="2023-03-10T15:17:34 IST" duration-ms="5314" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=clickProduct_AddProductButton_AddedToCart status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_AddProductButton_AddedToCart()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="clickCart_ContinueShoppingButton_RedirectedToHomepage()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:34 IST" name="clickCart_ContinueShoppingButton_RedirectedToHomepage" finished-at="2023-03-10T15:17:34 IST" duration-ms="277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCart_ContinueShoppingButton_RedirectedToHomepage -->
+        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:34 IST" name="publishResult" finished-at="2023-03-10T15:17:35 IST" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCart_ContinueShoppingButton_RedirectedToHomepage status=SUCCESS method=SwagLabs4CartpageTest.clickCart_ContinueShoppingButton_RedirectedToHomepage()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:36 IST" name="openInventorypage" finished-at="2023-03-09T22:26:39 IST" duration-ms="2742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_BackToProductsButton_GoneToHomepage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:39 IST" name="clickProduct_BackToProductsButton_GoneToHomepage" finished-at="2023-03-09T22:26:39 IST" duration-ms="458" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_BackToProductsButton_GoneToHomepage -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:39 IST" name="publishResult" finished-at="2023-03-09T22:26:40 IST" duration-ms="245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickProduct_BackToProductsButton_GoneToHomepage status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_BackToProductsButton_GoneToHomepage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:40 IST" name="openInventorypage" finished-at="2023-03-09T22:26:43 IST" duration-ms="3620" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_ProductAddOrRemoveButton_Clickable()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:43 IST" name="clickProduct_ProductAddOrRemoveButton_Clickable" finished-at="2023-03-09T22:26:44 IST" duration-ms="462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_ProductAddOrRemoveButton_Clickable -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:44 IST" name="publishResult" finished-at="2023-03-09T22:26:44 IST" duration-ms="265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickProduct_ProductAddOrRemoveButton_Clickable status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_ProductAddOrRemoveButton_Clickable()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:44 IST" name="openInventorypage" finished-at="2023-03-09T22:26:48 IST" duration-ms="3550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_ProductBanner$Description$Price_Checked()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:48 IST" name="clickProduct_ProductBanner$Description$Price_Checked" finished-at="2023-03-09T22:26:48 IST" duration-ms="384" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_ProductBanner$Description$Price_Checked -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:48 IST" name="publishResult" finished-at="2023-03-09T22:26:48 IST" duration-ms="265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickProduct_ProductBanner$Description$Price_Checked status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_ProductBanner$Description$Price_Checked()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:48 IST" name="openInventorypage" finished-at="2023-03-09T22:26:51 IST" duration-ms="2566" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_ProductBanner_OpenedProductpage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:51 IST" name="clickProduct_ProductBanner_OpenedProductpage" finished-at="2023-03-09T22:26:51 IST" duration-ms="327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_ProductBanner_OpenedProductpage -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:51 IST" name="publishResult" finished-at="2023-03-09T22:26:51 IST" duration-ms="260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickProduct_ProductBanner_OpenedProductpage status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_ProductBanner_OpenedProductpage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:51 IST" name="openInventorypage" finished-at="2023-03-09T22:26:54 IST" duration-ms="2576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_ProductImg_OpenedProductpage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:54 IST" name="clickProduct_ProductImg_OpenedProductpage" finished-at="2023-03-09T22:26:54 IST" duration-ms="343" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_ProductImg_OpenedProductpage -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:54 IST" name="publishResult" finished-at="2023-03-09T22:26:55 IST" duration-ms="267" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickProduct_ProductImg_OpenedProductpage status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_ProductImg_OpenedProductpage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="openInventorypage()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:55 IST" name="openInventorypage" finished-at="2023-03-09T22:26:57 IST" duration-ms="2689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openInventorypage -->
-        <test-method signature="clickProduct_RemoveProductButton_RemovedFromCart()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:57 IST" name="clickProduct_RemoveProductButton_RemovedFromCart" finished-at="2023-03-09T22:26:59 IST" duration-ms="1576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickProduct_RemoveProductButton_RemovedFromCart -->
-        <test-method is-config="true" signature="publishResult(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:59 IST" name="publishResult" finished-at="2023-03-09T22:26:59 IST" duration-ms="279" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=clickProduct_RemoveProductButton_RemovedFromCart status=SUCCESS method=SwagLabs3ProductpageTest.clickProduct_RemoveProductButton_RemovedFromCart()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- publishResult -->
-        <test-method is-config="true" signature="createReport()[pri:0, instance:test.SwagLabs3ProductpageTest@72d1ad2e]" started-at="2023-03-09T22:26:59 IST" name="createReport" finished-at="2023-03-09T22:27:00 IST" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="createReport()[pri:0, instance:test.SwagLabs4CartpageTest@515aebb0]" started-at="2023-03-10T15:17:35 IST" name="createReport" finished-at="2023-03-10T15:17:35 IST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createReport -->
-      </class> <!-- test.SwagLabs3ProductpageTest -->
+      </class> <!-- test.SwagLabs4CartpageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

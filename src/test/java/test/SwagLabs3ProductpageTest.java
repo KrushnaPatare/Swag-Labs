@@ -16,6 +16,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 import pojo.Browser;
+import pom.SwagLabsHomepage;
 import pom.SwagLabsLoginPage;
 import pom.SwagLabsProductpage;
 import utility.BaseClass;
@@ -46,7 +47,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 	    
 	}
 	
-	@Test()
+	@Test(priority = 1)
 	public void clickProduct_ProductImg_OpenedProductpage() throws InterruptedException {
 		
 		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
@@ -65,7 +66,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 	}
 	
 	
-	@Test()
+	@Test(priority = 2)
 	public void clickProduct_ProductBanner_OpenedProductpage() throws InterruptedException {
 		
 		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
@@ -85,7 +86,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 	}
 
 	
-	@Test()
+	@Test(priority = 3)
 	public void clickProduct_ProductBanner$Description$Price_Checked() throws InterruptedException {
 		
 		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
@@ -106,7 +107,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 	}
 	
 
-	@Test()
+	@Test(priority = 4)
 	public void clickProduct_AddProductButton_AddedToCart() throws InterruptedException {
 		
 		
@@ -128,7 +129,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 	}
 	
 	
-	@Test()
+	@Test(priority = 5)
 	public void clickProduct_RemoveProductButton_RemovedFromCart() throws InterruptedException {
 		
 		SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
@@ -158,7 +159,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 
 	
 	
-	@Test()
+	@Test(priority = 6)
 	public void clickProduct_ProductAddOrRemoveButton_Clickable() throws InterruptedException {
 		
 			SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
@@ -178,7 +179,7 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		
 	
 	
-	@Test()
+	@Test(priority = 7)
 	public void clickProduct_BackToProductsButton_GoneToHomepage() throws InterruptedException {
 		
 				SwagLabsProductpage  swagLabsProductpage = new SwagLabsProductpage (driver);
@@ -198,6 +199,21 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 	}
 	
 	
+	@Test(priority=8)
+	public void clickCart_Clickable_OpenedCart() {
+		
+		SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
+		SwagLabsHomepage.clickOnCartButton();
+		
+		String expectedTitle = "https://www.saucedemo.com/cart.html";
+		String actualTitle = driver.getCurrentUrl();
+		
+		System.out.println(actualTitle);
+		System.out.println(expectedTitle);
+		
+		Assert.assertEquals(actualTitle, expectedTitle);
+		test = reports.createTest("clickCart_Clickable_OpenedCart");
+	}
 	
 	
 		

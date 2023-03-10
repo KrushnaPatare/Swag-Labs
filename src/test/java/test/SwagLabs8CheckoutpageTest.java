@@ -13,7 +13,7 @@ import pojo.Browser;
 import utility.BaseClass;
 import utility.ExtentReport;
 
-public class SwagLabs4CheckoutpageTest extends BaseClass{
+public class SwagLabs8CheckoutpageTest extends BaseClass{
 	
 	ExtentReports reports;
 	ExtentTest test;

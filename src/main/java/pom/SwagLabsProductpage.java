@@ -14,7 +14,7 @@ public class SwagLabsProductpage {
 	@FindBy (xpath = "(//button)[4]") private WebElement addToCartButton;
 	@FindBy (xpath = "(//button)[4]") private WebElement removeButton;
 	@FindBy (tagName = "span") private WebElement shoppingCartBadge;
-	
+	@FindBy (xpath = "//a[@class='shopping_cart_link']") private WebElement shoppingCart;
 	
 	//span[@class='shopping_cart_badge']
 	
@@ -64,6 +64,11 @@ public class SwagLabsProductpage {
 		removeButton.click();
 		String text = removeButton.getText();
 		return text;
+	}
+	
+	public void clickOnCartButton() {
+
+		shoppingCart.click();
 	}
 
 }
