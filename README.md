@@ -1,2 +1,1 @@
 # Swag-Labs
-Automation Project
