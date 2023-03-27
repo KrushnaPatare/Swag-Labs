@@ -12,7 +12,7 @@ public class SwagLabCheckoutStepOnePage {
 	@FindBy (xpath = "//input[@name='postalCode']") private WebElement pincode;
 	@FindBy (xpath = "//button[@name='cancel']") private WebElement cancelButton;
 	@FindBy (xpath = "//input[@name='continue']") private WebElement cotinueButton;
-	
+	@FindBy (xpath = "//h3[@data-test='error']") private WebElement errorMSG;
 	
 	public SwagLabCheckoutStepOnePage(WebDriver driver)
 	{PageFactory.initElements(driver, this);}
@@ -40,5 +40,21 @@ public class SwagLabCheckoutStepOnePage {
 		cotinueButton.click();
 	}
 	
+	public void enterFirstname(String fName) {
+		firstName.sendKeys(fName);
+	}
+	
+	public void enterLastname(String lName) {
+		lastName.sendKeys(lName);
+	}
+	
+	public void enterPincode(String pCode) {
+		pincode.sendKeys(pCode);
+	}
+
+	public String getErrorMSG() {
+		String text = errorMSG.getText();
+		return text;
+	}
 
 }

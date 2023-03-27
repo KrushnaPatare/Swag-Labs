@@ -4,15 +4,16 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.SwagLabs4CartpageTest">
+      <class name="test.SwagLabs7CheckoutCompletepage">
         <methods>
           <include name="configureReport"/>
-          <include name="publishResult"/>
+          <include name="openCheckoutComplete_BackToHomeButton_RedirectedToProductpage"/>
+          <include name="openCheckoutComplete_GreetInformation_Displyed"/>
           <include name="launchBrowser"/>
-          <include name="clickCart_ContinueShoppingButton_RedirectedToHomepage"/>
           <include name="createReport"/>
+          <include name="publishResult"/>
         </methods>
-      </class> <!-- test.SwagLabs4CartpageTest -->
+      </class> <!-- test.SwagLabs7CheckoutCompletepage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

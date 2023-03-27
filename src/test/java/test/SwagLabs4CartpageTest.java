@@ -11,14 +11,11 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import pojo.Browser;
 import pom.SwagLabsCartPage;
-import pom.SwagLabsHomepage;
 import pom.SwagLabsLoginPage;
 import pom.SwagLabsProductpage;
 import utility.BaseClass;
@@ -36,6 +33,7 @@ public class SwagLabs4CartpageTest extends BaseClass{
 		reports.setSystemInfo("Test Suite", "Regression Test");
 		reports.setSystemInfo("Test Performed By", "Krushna Patare");
 	}
+	
 	
 	@Parameters("browser")
 	@BeforeMethod
@@ -64,17 +62,10 @@ public class SwagLabs4CartpageTest extends BaseClass{
 				+ "Remove";
 		System.out.println(expectedDetails);
 		System.out.println(actualDetails);
-
 		Assert.assertEquals(expectedDetails, actualDetails);
-		
 		test = reports.createTest("clickCart_AddedProducts_ShowedDetails");
 		Thread.sleep(100);
-		}
-	
-	
-	
-	
-	
+	}
 	
 	
 	@Test(priority=2)
@@ -85,28 +76,21 @@ public class SwagLabs4CartpageTest extends BaseClass{
 		boolean expectedCheck = true;
 		boolean actualCheck = false;
 			
-			try {
+		try {
 				driver.findElement(By.xpath("span"));
-			 }
-		catch(NoSuchElementException e)
-		     {
+			}
+		catch(NoSuchElementException e){
 				actualCheck = true;
 				System.out.println("NoSuchElementException");
 		     }
 		
 			System.out.println("expectedCheck = "+expectedCheck);
 			System.out.println("actualCheck = "+actualCheck);
-			
 			Assert.assertEquals(expectedCheck, actualCheck);
-			
 			test = reports.createTest("clickCart_AddedProducts_Removed");
 			Thread.sleep(100);
 	}
 	
-	
-	
-	
-
 	
 	@Test(priority=3)
 	public void clickCart_ContinueShoppingButton_RedirectedToHomepage() throws InterruptedException {
@@ -115,36 +99,26 @@ public class SwagLabs4CartpageTest extends BaseClass{
 		swagLabsCartPage.clickOncontinueShopping();
 		String expectedUrl = driver.getCurrentUrl();
 		String actualUrl = "https://www.saucedemo.com/inventory.html";
-		
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
-		
 		Assert.assertEquals(expectedUrl, actualUrl);
-		
 		test = reports.createTest("clickCart_ContinueShoppingButton_RedirectedToHomepage");
 		Thread.sleep(100);
-		
-		
 	}
 	
 
-	
 	@Test(priority=4)
 	public void clickCart_CheckoutButton_OpenedCheckoutpage() throws InterruptedException {
 		
 		SwagLabsCartPage swagLabsCartPage = new SwagLabsCartPage(driver);
 		swagLabsCartPage.clickOnCheckoutButton();
-		
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/checkout-step-one.html";
-		
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
-		
 		test = reports.createTest("clickCart_ContinueShoppingButton_RedirectedToHomepage");
 		Thread.sleep(100);
-		}
-		
+	}
 		
 	
 	@AfterMethod
@@ -152,19 +126,18 @@ public class SwagLabs4CartpageTest extends BaseClass{
 		
 		if(result.getStatus()==ITestResult.SUCCESS) {
 			
-        	test.log(Status.PASS,result.getName());
-		   }
+            test.log(Status.PASS,result.getName());
+		  }
         
 		else if(result.getStatus()==ITestResult.FAILURE) {
 			
 			test.log(Status.FAIL, result.getName());
-			}
+		  }
 		
 		else if(result.getStatus()==ITestResult.SKIP) {
 			
 			test.log(Status.SKIP, result.getName());
-			}
-		
+		  }
 		driver.close();		
 	}
 

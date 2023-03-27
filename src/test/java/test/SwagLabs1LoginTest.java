@@ -1,11 +1,9 @@
 package test;
 
 import java.io.IOException;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -17,11 +15,9 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import pojo.Browser;
 import pom.SwagLabsLoginPage;
 import utility.BaseClass;
@@ -31,9 +27,9 @@ import utility.Parameterization;
 @Listeners(utility.Listeners.class)
 public class SwagLabs1LoginTest extends BaseClass {
 	
-
 	ExtentReports reports;
 	ExtentTest test;
+	
 	
 	@BeforeTest
 	public void configureReport() {
@@ -42,6 +38,7 @@ public class SwagLabs1LoginTest extends BaseClass {
 		reports.setSystemInfo("Test Performed By", "Krushna Patare");
 	}
 	
+	
 	@Parameters("browser")
 	@BeforeMethod
 	public void launchBrowser(String browser) {
@@ -49,6 +46,7 @@ public class SwagLabs1LoginTest extends BaseClass {
 		 driver = Browser.openBrowser(browser); 
 	}
 
+	
 	@DataProvider (name = "LoginData")
 		public Object[][] cred(){
 			return new Object[][] {{"standard_user","secret_sauce"},{"locked_out_user","secret_sauce"},
@@ -75,15 +73,16 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);
 	}
 	
+	
 	@Test(priority=2 )
 	public void doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG() throws InterruptedException, EncryptedDocumentException, IOException {
 		
 		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 
-       String user = Parameterization.getExelData("credentials",0,1);
-       String pass = Parameterization.getExelData("credentials",1,1);
-       System.out.println("username = " +user );
-	   System.out.println("password = " +pass );
+        String user = Parameterization.getExelData("credentials",0,1);
+        String pass = Parameterization.getExelData("credentials",1,1);
+        System.out.println("username = " +user );
+	    System.out.println("password = " +pass );
 
 		swagLabsLoginPage.enterUsername(user );
 	    swagLabsLoginPage.enterPassword(pass );
@@ -94,10 +93,10 @@ public class SwagLabs1LoginTest extends BaseClass {
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/";
 		
-		   System.out.println("actualUrl = " +actualUrl );
-		   System.out.println("expectedUrl = " +expectedUrl );
-	       System.out.println("expectedErrorMSG = " +expectedErrorMSG );
-	       System.out.println("actualErrorMSG = " +actualErrorMSG );
+		System.out.println("actualUrl = " +actualUrl );
+		System.out.println("expectedUrl = " +expectedUrl );
+	    System.out.println("expectedErrorMSG = " +expectedErrorMSG );
+	    System.out.println("actualErrorMSG = " +actualErrorMSG );
 		
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals( expectedErrorMSG,actualErrorMSG  );
@@ -108,14 +107,16 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);
 	}
 
+	
 	@Test(priority=3)
 	public void doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG() throws InterruptedException, EncryptedDocumentException, IOException {
-	SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
+		
+	    SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 
-       String user = Parameterization.getExelData("credentials",0,2 );
-       String pass = Parameterization.getExelData("credentials",1,2 );
-       System.out.println("username = " +user );
-	   System.out.println("password = " +pass );
+        String user = Parameterization.getExelData("credentials",0,2 );
+        String pass = Parameterization.getExelData("credentials",1,2 );
+        System.out.println("username = " +user );
+	    System.out.println("password = " +pass );
 
 		swagLabsLoginPage.enterUsername(user );
 	    swagLabsLoginPage.enterPassword(pass );
@@ -126,10 +127,10 @@ public class SwagLabs1LoginTest extends BaseClass {
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/";
 		
-		   System.out.println("actualUrl = " +actualUrl );
-		   System.out.println("expectedUrl = " +expectedUrl );
-	       System.out.println("expectedErrorMSG = " +expectedErrorMSG );
-	       System.out.println("actualErrorMSG = " +actualErrorMSG );
+		System.out.println("actualUrl = " +actualUrl );
+		System.out.println("expectedUrl = " +expectedUrl );
+	    System.out.println("expectedErrorMSG = " +expectedErrorMSG );
+	    System.out.println("actualErrorMSG = " +actualErrorMSG );
 	      
 	    SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals( expectedErrorMSG,actualErrorMSG  );
@@ -140,14 +141,16 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);
 	}
 	
+	
 	@Test(priority=4)
 	public void doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG() throws InterruptedException, EncryptedDocumentException, IOException {
-	SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
+		
+	    SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 
-       String user = Parameterization.getExelData("credentials",0,3 );
-       String pass = Parameterization.getExelData("credentials",1,3 );
-       System.out.println("username = " +user );
-	   System.out.println("password = " +pass );
+        String user = Parameterization.getExelData("credentials",0,3 );
+        String pass = Parameterization.getExelData("credentials",1,3 );
+        System.out.println("username = " +user );
+	    System.out.println("password = " +pass );
 
 		swagLabsLoginPage.enterUsername(user );
 	    swagLabsLoginPage.enterPassword(pass );
@@ -158,10 +161,10 @@ public class SwagLabs1LoginTest extends BaseClass {
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/";
 		
-		   System.out.println("actualUrl = " +actualUrl );
-		   System.out.println("expectedUrl = " +expectedUrl );
-	       System.out.println("expectedErrorMSG = " +expectedErrorMSG );
-	       System.out.println("actualErrorMSG = " +actualErrorMSG );
+		System.out.println("actualUrl = " +actualUrl );
+		System.out.println("expectedUrl = " +expectedUrl );
+	    System.out.println("expectedErrorMSG = " +expectedErrorMSG );
+	    System.out.println("actualErrorMSG = " +actualErrorMSG );
 	      
 	    SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals( expectedErrorMSG,actualErrorMSG  );
@@ -172,14 +175,16 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);
 	}
 	
+	
 	@Test(priority=5)
 	public void doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG() throws InterruptedException, EncryptedDocumentException, IOException {
-	SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
+		
+		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 	
-	   String user ="";
-       String pass = Parameterization.getExelData("credentials",1,4 );
-       System.out.println("username = " +user );
-	   System.out.println("password = " +pass );
+	    String user ="";
+        String pass = Parameterization.getExelData("credentials",1,4 );
+        System.out.println("username = " +user );
+	    System.out.println("password = " +pass );
 
 		swagLabsLoginPage.enterUsername(user );
 	    swagLabsLoginPage.enterPassword(pass );
@@ -190,10 +195,10 @@ public class SwagLabs1LoginTest extends BaseClass {
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 		
-		   System.out.println("actualUrl = " +actualUrl );
-		   System.out.println("expectedUrl = " +expectedUrl );
-		   System.out.println("expectedWarningMSG = " +expectedWarningMSG );
-	       System.out.println("actualWarningMSG = " +actualWarningMSG );
+		System.out.println("actualUrl = " +actualUrl );
+		System.out.println("expectedUrl = " +expectedUrl );
+		System.out.println("expectedWarningMSG = " +expectedWarningMSG );
+	    System.out.println("actualWarningMSG = " +actualWarningMSG );
 	       
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals( expectedWarningMSG,actualWarningMSG  );
@@ -204,14 +209,16 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);
 	}
 	
+	
 	@Test(priority=6)
 	public void doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG() throws InterruptedException, EncryptedDocumentException, IOException {
-	SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
+		
+		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 
-       String user = Parameterization.getExelData("credentials",0,5);
-       String pass="";
-       System.out.println("username = " +user );
-	   System.out.println("password = " +pass );
+        String user = Parameterization.getExelData("credentials",0,5);
+        String pass="";
+        System.out.println("username = " +user );
+	    System.out.println("password = " +pass );
 
 		swagLabsLoginPage.enterUsername(user );
 	    swagLabsLoginPage.enterPassword(pass );
@@ -222,10 +229,10 @@ public class SwagLabs1LoginTest extends BaseClass {
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 		
-		   System.out.println("actualUrl = " +actualUrl );
-		   System.out.println("expectedUrl = " +expectedUrl );
-		   System.out.println("expectedWarningMSG = " +expectedWarningMSG );
-	       System.out.println("actualWarningMSG = " +actualWarningMSG );
+		System.out.println("actualUrl = " +actualUrl );
+		System.out.println("expectedUrl = " +expectedUrl );
+		System.out.println("expectedWarningMSG = " +expectedWarningMSG );
+	    System.out.println("actualWarningMSG = " +actualWarningMSG );
 	       
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals( expectedWarningMSG,actualWarningMSG  );
@@ -235,6 +242,7 @@ public class SwagLabs1LoginTest extends BaseClass {
 		test = reports.createTest("doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG"  );
 		Thread.sleep(100);
 	}
+	
 	
 	@Test(priority=7)
 	public void doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG() throws InterruptedException {
@@ -259,8 +267,7 @@ public class SwagLabs1LoginTest extends BaseClass {
 		System.out.println("expectedWarningMSG = " +expectedWarningMSG );
 	    System.out.println("actualWarningMSG = " +actualWarningMSG );
 			
-		    
-			Assert.assertEquals(actualUrl, expectedUrl );
+		Assert.assertEquals(actualUrl, expectedUrl );
 			
 		SoftAssert softAssert = new SoftAssert();
 		softAssert.assertEquals( expectedWarningMSG,actualWarningMSG  );
@@ -271,13 +278,15 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);	
 	}
 	
+	
 	@Test(priority=8)
 	public void doLogin_Clickable_CompletedLogin() throws InterruptedException, EncryptedDocumentException, IOException {
-	SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
+		
+		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 
-       String user = Parameterization.getExelData("credentials",0,0);
-       String pass = Parameterization.getExelData("credentials",1,0);
-       System.out.println("username = " +user );
+        String user = Parameterization.getExelData("credentials",0,0);
+        String pass = Parameterization.getExelData("credentials",1,0);
+        System.out.println("username = " +user );
 	    System.out.println("password = " +pass );
 
 		swagLabsLoginPage.enterUsername(user );
@@ -292,6 +301,7 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Thread.sleep(100);	
 	}
 	
+	
 	@Test(priority=9)
 	public void doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText() throws InterruptedException {
 		
@@ -302,79 +312,80 @@ public class SwagLabs1LoginTest extends BaseClass {
 		boolean expectedLogoIMG = true;
 		boolean actualLogoIMG = swagLabsLoginPage.showLogo();
 		
-	       System.out.println("expectedImgText = " +expectedImgText );
-	       System.out.println("actualImgText = " +actualImgText );
-		   System.out.println("expectedLogoIMG = " +expectedLogoIMG );
-		   System.out.println("actualLogoIMG = " +actualLogoIMG );
+	    System.out.println("expectedImgText = " +expectedImgText );
+	    System.out.println("actualImgText = " +actualImgText );
+		System.out.println("expectedLogoIMG = " +expectedLogoIMG );
+		System.out.println("actualLogoIMG = " +actualLogoIMG );
 		    
-		   SoftAssert softAssert = new SoftAssert();
-			softAssert.assertEquals( expectedImgText,actualImgText  );
-			softAssert.assertAll();
-			Assert.assertEquals(expectedLogoIMG, actualLogoIMG ); 
+		SoftAssert softAssert = new SoftAssert();
+		softAssert.assertEquals( expectedImgText,actualImgText  );
+		softAssert.assertAll();
+		Assert.assertEquals(expectedLogoIMG, actualLogoIMG ); 
 	
-		    test = reports.createTest("doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText"  );
-			Thread.sleep(100);
+		test = reports.createTest("doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText"  );
+		Thread.sleep(100);
 	}
 
 	@Test(priority=10)
 	public void doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG() throws InterruptedException, EncryptedDocumentException, IOException {
 		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
 		
-	       String userN = "";
-	       String passW = "";
-	       System.out.println("no usename given" );
-	       System.out.println("no password given" );
+	    String userN = "";
+	    String passW = "";
+	    System.out.println("no usename given" );
+	    System.out.println("no password given" );
 
-			swagLabsLoginPage.enterUsername(userN );
-		    swagLabsLoginPage.enterPassword(passW );
-			swagLabsLoginPage.clickOnLogin();
-			swagLabsLoginPage.clickErrorOrWarningBoxCancelButton();
+		swagLabsLoginPage.enterUsername(userN );
+		swagLabsLoginPage.enterPassword(passW );
+		swagLabsLoginPage.clickOnLogin();
+		swagLabsLoginPage.clickErrorOrWarningBoxCancelButton();
 			
-			boolean warningMSG = false;
+		boolean warningMSG = false;
 		
-			 try {
-					driver.findElement(By.xpath("//h3[@data-test='error']"));
-				 }
-			catch(NoSuchElementException e)
-			     {
-					warningMSG = true;
-					System.out.println("NoSuchElementException");
-			     }
-			System.out.println("warningMSG = "+warningMSG);
-			System.out.println("NoSuchElementException");
+		try {
+			 driver.findElement(By.xpath("//h3[@data-test='error']"));
+			}
+	    catch(NoSuchElementException e){
+			 warningMSG = true;
+			 System.out.println("NoSuchElementException");
+			}
+		
+		System.out.println("warningMSG = "+warningMSG);
+		System.out.println("NoSuchElementException");
 			
-			Assert.assertTrue(warningMSG);
+		Assert.assertTrue(warningMSG);
 			
 			
 			
-		       String user = Parameterization.getExelData("credentials",0,1);
-		       String pass = Parameterization.getExelData("credentials",1,1);
-		       System.out.println("username = " +user );
-			   System.out.println("password = " +pass );
+		String user = Parameterization.getExelData("credentials",0,1);
+		String pass = Parameterization.getExelData("credentials",1,1);
+		System.out.println("username = " +user );		System.out.println("password = " +pass );
 
-				swagLabsLoginPage.enterUsername(user );
-			    swagLabsLoginPage.enterPassword(pass );
-				swagLabsLoginPage.clickOnLogin();
-				swagLabsLoginPage.clickErrorOrWarningBoxCancelButton();
+		swagLabsLoginPage.enterUsername(user );
+		swagLabsLoginPage.enterPassword(pass );
+		swagLabsLoginPage.clickOnLogin();
+		swagLabsLoginPage.clickErrorOrWarningBoxCancelButton();
 				
-				boolean errorMSG = false;
-				try {
-					driver.findElement(By.xpath("//h3[@data-test='error']"));
-				    }
-			  catch(NoSuchElementException d)
-			        {
-					errorMSG = true;
-					System.out.println("NoSuchElementException");
-			        }
-				System.out.println("errorMSG = "+errorMSG);
-				System.out.println("NoSuchElementException");
-				
-				Assert.assertTrue(errorMSG);
+		boolean errorMSG = false;
 		
-		 test = reports.createTest("doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG"  );
-			Thread.sleep(100);
+		try {
+			 driver.findElement(By.xpath("//h3[@data-test='error']"));
+		    }
+		catch(NoSuchElementException d){
+			  errorMSG = true;
+		      System.out.println("NoSuchElementException");
+		    }
+		
+		System.out.println("errorMSG = "+errorMSG);
+		System.out.println("NoSuchElementException");
+				
+		Assert.assertTrue(errorMSG);
+		
+		test = reports.createTest("doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG"  );
+		Thread.sleep(100);
 	}
 
+	
 	@Test(priority=11)
 	public void doLogin_PlaceHolderText_Displayed() throws InterruptedException {
 		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage(driver);
@@ -411,10 +422,13 @@ public class SwagLabs1LoginTest extends BaseClass {
 		driver.close();
 	}
 
+	
 	@AfterTest
-	public void createReport()
-	{reports.flush();}
-		
+	public void createReport(){
+		reports.flush();
 	}
+	
+	
+}
 
 

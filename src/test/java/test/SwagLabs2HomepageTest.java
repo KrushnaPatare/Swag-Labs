@@ -2,9 +2,7 @@ package test;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -14,12 +12,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import org.testng.asserts.Assertion;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
 import pojo.Browser;
 import pom.SwagLabsHomepage;
 import pom.SwagLabsLoginPage;
@@ -73,6 +68,7 @@ import utility.ExtentReport;
 			Thread.sleep(100);
 		}
 		
+		
 		@Test(priority=2)
 		public void clickSort_Clickable_OpenedDropdown() throws InterruptedException {
 			
@@ -89,6 +85,7 @@ import utility.ExtentReport;
 			test = reports.createTest("clickSort_Clickable_OpenedDropdown");
 			Thread.sleep(100);
 		}
+		
 		
 		@Test(priority=3)
 		public void clickSort_OptionsList_CheckedAllOptions() throws InterruptedException {
@@ -110,9 +107,10 @@ import utility.ExtentReport;
 		         Assert.assertEquals(expectedOptions, actualOptions);
 		      }
 		
-		      test = reports.createTest("clickSort_Clickable_OpenedDropdown");
-				Thread.sleep(100);
+		    test = reports.createTest("clickSort_Clickable_OpenedDropdown");
+		    Thread.sleep(100);
 		}
+		
 		
 		@Test(priority=4)
 		public void clickSort_PriceHighToLow_GotInOrder() throws InterruptedException {
@@ -157,6 +155,7 @@ import utility.ExtentReport;
 			Thread.sleep(100);	
 		}
 		
+		
 		@Test(priority=6)
 		public void clickSort_ProductDescending_GotInOrder() throws InterruptedException {
 			
@@ -176,7 +175,8 @@ import utility.ExtentReport;
 			test = reports.createTest("clickSort_ProductDescending_GotInOrder");
 			Thread.sleep(100);
 		}
-			
+		
+		
 		@Test(priority=7)
 		public void clickSort_ProductAscending_GotInOrder() throws InterruptedException {
 			
@@ -214,6 +214,7 @@ import utility.ExtentReport;
 			Thread.sleep(100);
 		}
 		
+		
 		@Test(priority=9)
 		public void clickSort_ProductsBefore_PredefinedNumber() throws InterruptedException {
 			
@@ -227,9 +228,7 @@ import utility.ExtentReport;
 			Assert.assertEquals(expectedProductNumberBeforeSort, actualProductNumberBeforeSort);
 			test = reports.createTest("clickSort_ProductsBefore_PredefinedNumber");
 			Thread.sleep(100);
-		}
-		
-
+		}		
 		
 		
 		@Test(priority=10)
@@ -245,6 +244,7 @@ import utility.ExtentReport;
 			test = reports.createTest("clickSort_ProductOrder_UnarrangedLikeBefore");
 			Thread.sleep(100);
 		}
+		
 		
 		@Test(priority=11)
 		public void clickSortBefore_DoOtherActions_SavedSortingType() throws InterruptedException {
@@ -281,7 +281,7 @@ import utility.ExtentReport;
 				Assert.assertEquals(expectedProductBanner, actualProductBanner);
 			}
 			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
-				Thread.sleep(100);
+			Thread.sleep(100);
 		}
 
 		
@@ -322,8 +322,8 @@ import utility.ExtentReport;
 			System.out.println("actualTitle = "+actualTitle);
 			Assert.assertEquals(expectedTitle,actualTitle);
 
-		test = reports.createTest("clickOpenMenu_$About$Option_OpenedLinkedPage");
-		Thread.sleep(100);
+			test = reports.createTest("clickOpenMenu_$About$Option_OpenedLinkedPage");
+			Thread.sleep(100);
 		}
 		
 		
@@ -345,8 +345,8 @@ import utility.ExtentReport;
 				System.out.println("expectedProductBanner = "+expectedProductBanner);
 				System.out.println("actualProductBanner = "+actualProductBanner);
 				Assert.assertEquals(expectedProductBanner, actualProductBanner);
-				test = reports.createTest("clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts");
 			}
+			test = reports.createTest("clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts");
 			Thread.sleep(100);
 		}
 		
@@ -372,7 +372,6 @@ import utility.ExtentReport;
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
 			SwagLabsHomepage.clickOnSingleAddToCart();
-			
 			SwagLabsHomepage.clickOnOpenMenuButton();
 			SwagLabsHomepage.clickOnresetAppStateButton();
 			SwagLabsHomepage.clickOncloseMenuButton();		
@@ -390,7 +389,6 @@ import utility.ExtentReport;
 			     }
 			System.out.println("expectedReset = "+expectedReset);
 			System.out.println("actualReset = "+actualReset);
-			
 			Assert.assertEquals(expectedReset,actualReset);
 			test = reports.createTest("clickOpenMenu_$ResetAppState$Option_DefaultAppState");
 			Thread.sleep(100);
@@ -401,11 +399,8 @@ import utility.ExtentReport;
 		public void clickOpenMenu_CloseMenuButton_ClosedAllOptions() throws InterruptedException {
 			
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
-			
 			SwagLabsHomepage.clickOnOpenMenuButton();
 			SwagLabsHomepage.clickOncloseMenuButton();	
-			
-			
 			String button = driver.findElement(By.xpath("//button[text()='Close Menu']")).getAttribute("tabindex");
 			boolean expectedValue = true;
 			boolean actualValue = false;
@@ -432,10 +427,8 @@ import utility.ExtentReport;
 			SwagLabsHomepage.clickOnTwitterButton(driver);
 			String expectedUrl = "https://twitter.com/saucelabs";
 			String actualUrl = driver.getCurrentUrl();
-			
 			System.out.println("actualUrl = "+actualUrl);
 			System.out.println("expectedUrl = "+expectedUrl);
-			
 			Assert.assertEquals(actualUrl, expectedUrl);
 			test = reports.createTest("clickTwitterTab_SocialSite_OpenedTwitterPage");
 			Thread.sleep(100);
@@ -449,10 +442,8 @@ import utility.ExtentReport;
 			SwagLabsHomepage.clickOnFacebookButton(driver);
 			String expectedUrl = "https://www.facebook.com/saucelabs";
 			String actualUrl = driver.getCurrentUrl();
-			
 			System.out.println("actualUrl = "+actualUrl);
 			System.out.println("expectedUrl = "+expectedUrl);
-			
 			Assert.assertEquals(actualUrl, expectedUrl);
 			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
 			Thread.sleep(100);
@@ -466,10 +457,8 @@ import utility.ExtentReport;
 			SwagLabsHomepage.clickOnLinkedinButton(driver);
 			String expectedUrl = "https://www.linkedin.com/company/sauce-labs/?original_referer=";
 			String actualUrl = driver.getCurrentUrl();
-			
 			System.out.println("actualUrl = "+actualUrl);
 			System.out.println("expectedUrl = "+expectedUrl);
-			
 			Assert.assertEquals(actualUrl, expectedUrl);
 			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
 			Thread.sleep(100);
@@ -486,10 +475,7 @@ import utility.ExtentReport;
 			int expectedNum = 1;
 			System.out.println("actualNum = "+actualNum);
 			System.out.println("expectedNum = "+expectedNum);
-			
 			Assert.assertEquals(expectedNum, actualNum);
-			
-			
 			test = reports.createTest("verifyCartTab_TotalProductNumber_ShowedInNotification");
 			Thread.sleep(100);
 		}
@@ -502,12 +488,9 @@ import utility.ExtentReport;
 			SwagLabsHomepage SwagLabsHomepage = new SwagLabsHomepage(driver);
 			String actualFooter = SwagLabsHomepage.getFooter();
 			String expectedFooter = "© 2023 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy";
-			
 			System.out.println("actualFooter = "+actualFooter);
 			System.out.println("expectedFooter = "+expectedFooter);
-			
 			Assert.assertEquals(expectedFooter, actualFooter);
-			
 			test = reports.createTest("verifyHomepageFooter_Text_Checked");
 			Thread.sleep(100);
 		}
@@ -518,15 +501,13 @@ import utility.ExtentReport;
 		driver.navigate().back();
 		driver.navigate().refresh();
 		driver.navigate().forward();
-
 		String actualUrl = driver.getCurrentUrl();
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 
 		Assert.assertEquals(actualUrl, expectedUrl);
-
 		test = reports.createTest("verifyHomepageFooter_Text_Checked");
 		Thread.sleep(100);
-}
+		}
 	
 		
 		@AfterMethod
