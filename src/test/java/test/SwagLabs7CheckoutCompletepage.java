@@ -1,21 +1,13 @@
 package test;
 
 import java.io.IOException;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-
 import pojo.Browser;
 import pom.SwagLabCheckoutStepOnePage;
 import pom.SwagLabsCartPage;
@@ -24,20 +16,9 @@ import pom.SwagLabsCheckoutStepTwoPage;
 import pom.SwagLabsLoginPage;
 import pom.SwagLabsProductpage;
 import utility.BaseClass;
-import utility.ExtentReport;
 import utility.Parameterization;
 
 public class SwagLabs7CheckoutCompletepage extends BaseClass{
-	
-	ExtentReports reports;
-	ExtentTest test;
-	
-	@BeforeTest
-	public void configureReport() {
-		reports = ExtentReport.createExtentReports();
-		reports.setSystemInfo("Test Suite", "Regression Test");
-		reports.setSystemInfo("Test Performed By", "Krushna Patare");
-	}
 	
 	@Parameters("browser")
 	@BeforeMethod
@@ -68,6 +49,12 @@ public class SwagLabs7CheckoutCompletepage extends BaseClass{
 			swagLabsCheckoutStepTwoPage.clickOnfinishButton();
 	}
 
+	@AfterMethod
+	public void closeBrowser (ITestResult result ) {
+		
+		driver.quit();
+	}
+	
 	@Test(priority=1)
 	public void openCheckoutComplete_GreetInformation_Displyed() throws InterruptedException {
 		
@@ -81,7 +68,6 @@ public class SwagLabs7CheckoutCompletepage extends BaseClass{
 		System.out.println("expectedGreetText = "+expectedGreetText);
 		
 		Assert.assertEquals(expectedGreetText, actualGreetText);
-		test = reports.createTest("openCheckoutComplete_GreetInformation_Displyed");
 		Thread.sleep(100);
 	}
 	
@@ -98,30 +84,8 @@ public class SwagLabs7CheckoutCompletepage extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		
 		Assert.assertEquals(expectedUrl, actualUrl);
-		test = reports.createTest("openCheckoutComplete_BackToHomeButton_RedirectedToProductpage");
 		Thread.sleep(100);
 	}
 	
-	
-
-	@AfterMethod
-	public void publishResult (ITestResult result ) {
-		
-		if(result.getStatus()==ITestResult.SUCCESS)
-	    {test.log(Status.PASS,result.getName());}
-	    
-		else if(result.getStatus()==ITestResult.FAILURE) 
-		{test.log(Status.FAIL, result.getName());}
-		
-		else if(result.getStatus()==ITestResult.SKIP)
-		{test.log(Status.SKIP, result.getName());}
-		
-		driver.close();
-	}
-
-	@AfterTest
-	public void createReport()
-	{reports.flush();}
-		
 
 }

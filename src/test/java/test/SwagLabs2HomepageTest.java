@@ -7,35 +7,17 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import pojo.Browser;
 import pom.SwagLabsHomepage;
 import pom.SwagLabsLoginPage;
 import utility.BaseClass;
-import utility.ExtentReport;
-
 @Listeners(utility.Listeners.class)
 	public class SwagLabs2HomepageTest extends BaseClass {
-		
-		ExtentReports reports;
-		ExtentTest test;
-		
-		@BeforeTest
-		public void configureReport() {
-			reports = ExtentReport.createExtentReports();
-			reports.setSystemInfo("Test Suite", "Regression Test");
-			reports.setSystemInfo("Test Performed By", "Krushna Patare");
-		}
-		
+
 		@BeforeMethod()
-		
 		public void openInventorypage() throws InterruptedException {
 			
 			driver = Browser.openBrowser("chrome");
@@ -46,6 +28,11 @@ import utility.ExtentReport;
 		    Thread.sleep(1000);
 		}
 
+		@AfterMethod
+		public void closeBrowser (ITestResult result ) {
+			
+			driver.quit();
+		}
 
 		@Test(priority=1)
 		public void verifyHomepage_LogoPresendAndSpelling_Checked() throws InterruptedException {
@@ -63,8 +50,6 @@ import utility.ExtentReport;
 			
 			Assert.assertEquals(expectedLogo, actualLogo);
 			Assert.assertEquals(expectedLogoText, actualLogoText);
-			
-			test = reports.createTest("verifyHomepage_LogoPresendAndSpelling_Checked");
 			Thread.sleep(100);
 		}
 		
@@ -82,7 +67,6 @@ import utility.ExtentReport;
 			
 			Assert.assertEquals(expectedSort, actualSort);
 			
-			test = reports.createTest("clickSort_Clickable_OpenedDropdown");
 			Thread.sleep(100);
 		}
 		
@@ -107,7 +91,6 @@ import utility.ExtentReport;
 		         Assert.assertEquals(expectedOptions, actualOptions);
 		      }
 		
-		    test = reports.createTest("clickSort_Clickable_OpenedDropdown");
 		    Thread.sleep(100);
 		}
 		
@@ -129,7 +112,6 @@ import utility.ExtentReport;
 				Assert.assertEquals(expectedPrice, actualPrice);
 			}
 			
-			test = reports.createTest("clickSort_PriceHighToLow_GotInOrder");
 			Thread.sleep(100);
 		}
 	
@@ -150,8 +132,6 @@ import utility.ExtentReport;
 				System.out.println("actualPrice = "+actualPrice);
 				Assert.assertEquals(expectedPrice, actualPrice);
 			}
-			
-			test = reports.createTest("clickSort_PriceLowToHigh_GotInOrder");
 			Thread.sleep(100);	
 		}
 		
@@ -172,7 +152,6 @@ import utility.ExtentReport;
 				System.out.println("actualProductBanner = "+actualProductBanner);
 				Assert.assertEquals(expectedProductBanner, actualProductBanner);
 			}
-			test = reports.createTest("clickSort_ProductDescending_GotInOrder");
 			Thread.sleep(100);
 		}
 		
@@ -193,7 +172,6 @@ import utility.ExtentReport;
 				System.out.println("actualProductBanner = "+actualProductBanner);
 				Assert.assertEquals(expectedProductBanner, actualProductBanner);
 			}
-			test = reports.createTest("clickSort_ProductAscending_GotInOrder");
 			Thread.sleep(100);
 		}
 	
@@ -210,7 +188,6 @@ import utility.ExtentReport;
 			System.out.println("productNumberAfterSort = "+productNumberAfterSort);
 			
 			Assert.assertEquals(productNumberBeforeSort, productNumberAfterSort);
-			test = reports.createTest("clickSort_Clickable_OpenedDropdown");
 			Thread.sleep(100);
 		}
 		
@@ -226,7 +203,6 @@ import utility.ExtentReport;
 			System.out.println("actualProductNumberBeforeSort = "+actualProductNumberBeforeSort);
 			
 			Assert.assertEquals(expectedProductNumberBeforeSort, actualProductNumberBeforeSort);
-			test = reports.createTest("clickSort_ProductsBefore_PredefinedNumber");
 			Thread.sleep(100);
 		}		
 		
@@ -241,7 +217,6 @@ import utility.ExtentReport;
 			String actualProduct = driver.findElement(By.xpath("(//div[@class='inventory_item_name'])[1]")).getText();
 			
 			Assert.assertEquals(expectedProduct, actualProduct);
-			test = reports.createTest("clickSort_ProductOrder_UnarrangedLikeBefore");
 			Thread.sleep(100);
 		}
 		
@@ -258,7 +233,6 @@ import utility.ExtentReport;
 			System.out.println("expectedProduct = "+expectedProduct);
 			System.out.println("actualProduct = "+actualProduct);
 			Assert.assertEquals(expectedProduct, actualProduct);
-			test = reports.createTest("clickSortBefore_DoOtherActions_SavedSortingType");
 			Thread.sleep(100);
 		}
 		
@@ -280,7 +254,6 @@ import utility.ExtentReport;
 				System.out.println("actualProductBanner = "+actualProductBanner);
 				Assert.assertEquals(expectedProductBanner, actualProductBanner);
 			}
-			test = reports.createTest("clickSortAfter_PreviousSortedResults_GotSortedAgain");
 			Thread.sleep(100);
 		}
 
@@ -305,7 +278,6 @@ import utility.ExtentReport;
 				System.out.println("actualOptions = "+actualOptions);
 				Assert.assertEquals(expectedOptions,actualOptions);
 			}
-			test = reports.createTest("clickOpenMenu_Clickable_OpenedAllOptions");
 			Thread.sleep(100);
 		}
 		
@@ -322,7 +294,6 @@ import utility.ExtentReport;
 			System.out.println("actualTitle = "+actualTitle);
 			Assert.assertEquals(expectedTitle,actualTitle);
 
-			test = reports.createTest("clickOpenMenu_$About$Option_OpenedLinkedPage");
 			Thread.sleep(100);
 		}
 		
@@ -346,7 +317,6 @@ import utility.ExtentReport;
 				System.out.println("actualProductBanner = "+actualProductBanner);
 				Assert.assertEquals(expectedProductBanner, actualProductBanner);
 			}
-			test = reports.createTest("clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts");
 			Thread.sleep(100);
 		}
 		
@@ -362,7 +332,6 @@ import utility.ExtentReport;
 			System.out.println("expectedTitle = "+expectedTitle);
 			System.out.println("actualTitle = "+actualTitle);
 			Assert.assertEquals(expectedTitle,actualTitle);
-			test = reports.createTest("clickOpenMenu_$Logout$Option_LoggedoutUser");
 			Thread.sleep(100);
 		}
 		
@@ -380,7 +349,7 @@ import utility.ExtentReport;
 			boolean actualReset = false;
 			
 			 try {
-				 int items = SwagLabsHomepage.countCartItem();				 
+				   SwagLabsHomepage.countCartItem();				 
 				 }
 			catch(Exception e)
 			     {
@@ -390,7 +359,6 @@ import utility.ExtentReport;
 			System.out.println("expectedReset = "+expectedReset);
 			System.out.println("actualReset = "+actualReset);
 			Assert.assertEquals(expectedReset,actualReset);
-			test = reports.createTest("clickOpenMenu_$ResetAppState$Option_DefaultAppState");
 			Thread.sleep(100);
 		}
 		
@@ -415,7 +383,6 @@ import utility.ExtentReport;
 			 System.out.println("actualValue = "+actualValue);
 				
 			 Assert.assertEquals(expectedValue,actualValue);
-			 test = reports.createTest("clickOpenMenu_CloseMenuButton_ClosedAllOptions");
 			 Thread.sleep(100);
 		}
 		
@@ -430,7 +397,6 @@ import utility.ExtentReport;
 			System.out.println("actualUrl = "+actualUrl);
 			System.out.println("expectedUrl = "+expectedUrl);
 			Assert.assertEquals(actualUrl, expectedUrl);
-			test = reports.createTest("clickTwitterTab_SocialSite_OpenedTwitterPage");
 			Thread.sleep(100);
 		}
 		
@@ -445,7 +411,6 @@ import utility.ExtentReport;
 			System.out.println("actualUrl = "+actualUrl);
 			System.out.println("expectedUrl = "+expectedUrl);
 			Assert.assertEquals(actualUrl, expectedUrl);
-			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
 			Thread.sleep(100);
 		}
 		
@@ -460,7 +425,6 @@ import utility.ExtentReport;
 			System.out.println("actualUrl = "+actualUrl);
 			System.out.println("expectedUrl = "+expectedUrl);
 			Assert.assertEquals(actualUrl, expectedUrl);
-			test = reports.createTest("clickFacebookTab_SocialSite_OpenedFacebookPage");
 			Thread.sleep(100);
 		}
 		
@@ -476,7 +440,6 @@ import utility.ExtentReport;
 			System.out.println("actualNum = "+actualNum);
 			System.out.println("expectedNum = "+expectedNum);
 			Assert.assertEquals(expectedNum, actualNum);
-			test = reports.createTest("verifyCartTab_TotalProductNumber_ShowedInNotification");
 			Thread.sleep(100);
 		}
 			
@@ -491,7 +454,6 @@ import utility.ExtentReport;
 			System.out.println("actualFooter = "+actualFooter);
 			System.out.println("expectedFooter = "+expectedFooter);
 			Assert.assertEquals(expectedFooter, actualFooter);
-			test = reports.createTest("verifyHomepageFooter_Text_Checked");
 			Thread.sleep(100);
 		}
 		
@@ -505,36 +467,8 @@ import utility.ExtentReport;
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 
 		Assert.assertEquals(actualUrl, expectedUrl);
-		test = reports.createTest("verifyHomepageFooter_Text_Checked");
 		Thread.sleep(100);
 		}
-	
-		
-		@AfterMethod
-		public void publishResult (ITestResult result) {
-			
-			if(result.getStatus()==ITestResult.SUCCESS) {
-				
-	        	test.log(Status.PASS,result.getName());
-			   }
-	        
-			else if(result.getStatus()==ITestResult.FAILURE) {
-				
-				test.log(Status.FAIL, result.getName());
-				}
-			
-			else if(result.getStatus()==ITestResult.SKIP) {
-				
-				test.log(Status.SKIP, result.getName());
-				}
-			
-			driver.close();		
-		}
 
-		
-		@AfterTest
-		public void createReport() {
-			reports.flush();
-		}
 	
 	}

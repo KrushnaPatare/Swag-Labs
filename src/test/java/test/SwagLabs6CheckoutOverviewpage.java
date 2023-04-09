@@ -5,15 +5,10 @@ import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import pojo.Browser;
 import pom.SwagLabCheckoutStepOnePage;
 import pom.SwagLabsCartPage;
@@ -21,22 +16,11 @@ import pom.SwagLabsCheckoutStepTwoPage;
 import pom.SwagLabsLoginPage;
 import pom.SwagLabsProductpage;
 import utility.BaseClass;
-import utility.ExtentReport;
 import utility.Parameterization;
 
 @Listeners(utility.Listeners.class)
 public class SwagLabs6CheckoutOverviewpage extends BaseClass{
-	
-	ExtentReports reports;
-	ExtentTest test;
-	
-	@BeforeTest
-	public void configureReport() {
-		reports = ExtentReport.createExtentReports();
-		reports.setSystemInfo("Test Suite", "Regression Test");
-		reports.setSystemInfo("Test Performed By", "Krushna Patare");
-	}
-	
+
 	@Parameters("browser")
 	@BeforeMethod
 	public void launchBrowser(String browser) throws EncryptedDocumentException, InterruptedException, IOException {
@@ -63,6 +47,11 @@ public class SwagLabs6CheckoutOverviewpage extends BaseClass{
 			swagLabCheckoutStepOnePage.clickContinueButton();
 	}
 
+	@AfterMethod
+	public void closeBrowser (ITestResult result ) {
+		
+		driver.quit();
+	}
 	
 	@Test(priority=1)
 	public void openCheckoutOverview_PurchaseInformation_Checked() throws InterruptedException {
@@ -89,7 +78,6 @@ public class SwagLabs6CheckoutOverviewpage extends BaseClass{
 		System.out.println("expectedSummary = "+actualSummary);
 		
 		Assert.assertEquals(expectedSummary, actualSummary);
-		test = reports.createTest("clickCheckout_FirstnamePlaceholderText_Displayed");
 		Thread.sleep(100);
 	}
 	
@@ -107,7 +95,6 @@ public class SwagLabs6CheckoutOverviewpage extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		
 		Assert.assertEquals(expectedUrl, actualUrl);
-		test = reports.createTest("openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete");
 		Thread.sleep(100);
 	}
 	
@@ -125,28 +112,7 @@ public class SwagLabs6CheckoutOverviewpage extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		
 		Assert.assertEquals(expectedUrl, actualUrl);
-		test = reports.createTest("openCheckoutOverview_CancelButton_RedirectedToProductpage");
 		Thread.sleep(100);
 	}
 
-	
-	@AfterMethod
-	public void publishResult (ITestResult result ) {
-		
-		if(result.getStatus()==ITestResult.SUCCESS)
-	    {test.log(Status.PASS,result.getName());}
-	    
-		else if(result.getStatus()==ITestResult.FAILURE) 
-		{test.log(Status.FAIL, result.getName());}
-		
-		else if(result.getStatus()==ITestResult.SKIP)
-		{test.log(Status.SKIP, result.getName());}
-		
-		driver.close();
-	}
-
-	@AfterTest
-	public void createReport()
-	{reports.flush();}
-		
 }

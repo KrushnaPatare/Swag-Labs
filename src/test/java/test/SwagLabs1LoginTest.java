@@ -7,38 +7,20 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import pojo.Browser;
 import pom.SwagLabsLoginPage;
 import utility.BaseClass;
-import utility.ExtentReport;
 import utility.Parameterization;
 
 @Listeners(utility.Listeners.class)
 public class SwagLabs1LoginTest extends BaseClass {
-	
-	ExtentReports reports;
-	ExtentTest test;
-	
-	
-	@BeforeTest
-	public void configureReport() {
-		reports = ExtentReport.createExtentReports();
-		reports.setSystemInfo("Test Suite", "Regression Test");
-		reports.setSystemInfo("Test Performed By", "Krushna Patare");
-	}
-	
-	
+
 	@Parameters("browser")
 	@BeforeMethod
 	public void launchBrowser(String browser) {
@@ -46,6 +28,11 @@ public class SwagLabs1LoginTest extends BaseClass {
 		 driver = Browser.openBrowser(browser); 
 	}
 
+	@AfterMethod
+	public void closeBrowser (ITestResult result ) {
+		
+		driver.quit();
+	}
 	
 	@DataProvider (name = "LoginData")
 		public Object[][] cred(){
@@ -69,7 +56,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 	    System.out.println("expectedUrl = " +expectedUrl );
 		Assert.assertEquals( actualUrl, expectedUrl );
 		
-		test = reports.createTest("public void doLogin_1ValidId2ValidPwd_OpenedHomepage");
 		Thread.sleep(100);
 	}
 	
@@ -103,7 +89,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertEquals( actualUrl, expectedUrl);
 		
-		test = reports.createTest("doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG"  );
 		Thread.sleep(100);
 	}
 
@@ -137,7 +122,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertEquals( actualUrl, expectedUrl);
 		
-		test = reports.createTest("doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -171,7 +155,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertEquals( actualUrl, expectedUrl);
 		
-		test = reports.createTest("doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -205,7 +188,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertNotEquals(actualUrl, expectedUrl );
 		
-		test = reports.createTest("doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -239,7 +221,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertNotEquals(actualUrl, expectedUrl );
 		
-		test = reports.createTest("doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -274,7 +255,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertEquals(actualUrl, expectedUrl );
 		
-		test = reports.createTest("doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG"  );
 		Thread.sleep(100);	
 	}
 	
@@ -297,7 +277,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		String expectedUrl = "https://www.saucedemo.com/inventory.html";
 		Assert.assertEquals(actualUrl, expectedUrl );
 		
-		test = reports.createTest("doLogin_Clickable_CompletedLogin"  );
 		Thread.sleep(100);	
 	}
 	
@@ -322,7 +301,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 		softAssert.assertAll();
 		Assert.assertEquals(expectedLogoIMG, actualLogoIMG ); 
 	
-		test = reports.createTest("doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText"  );
 		Thread.sleep(100);
 	}
 
@@ -381,7 +359,6 @@ public class SwagLabs1LoginTest extends BaseClass {
 				
 		Assert.assertTrue(errorMSG);
 		
-		test = reports.createTest("doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG"  );
 		Thread.sleep(100);
 	}
 
@@ -402,31 +379,11 @@ public class SwagLabs1LoginTest extends BaseClass {
 		Assert.assertEquals(expectedUsernamePlaceHolderText, actualUsernamePlaceHolderText);
 		Assert.assertEquals(expectedPasswordPlaceHolderText,actualPasswordPlaceHolderText);
 		
-		test = reports.createTest("doLogin_PlaceHolderText_Displayed"  );
 		Thread.sleep(100);
 	}
 	
 	
-	@AfterMethod
-	public void publishResult (ITestResult result ) {
-		
-		if(result.getStatus()==ITestResult.SUCCESS)
-	    {test.log(Status.PASS,result.getName());}
-	    
-		else if(result.getStatus()==ITestResult.FAILURE) 
-		{test.log(Status.FAIL, result.getName());}
-		
-		else if(result.getStatus()==ITestResult.SKIP)
-		{test.log(Status.SKIP, result.getName());}
-		
-		driver.close();
-	}
-
 	
-	@AfterTest
-	public void createReport(){
-		reports.flush();
-	}
 	
 	
 }

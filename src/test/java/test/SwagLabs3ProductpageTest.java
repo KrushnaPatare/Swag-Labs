@@ -5,36 +5,16 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-
 import pojo.Browser;
 import pom.SwagLabsHomepage;
 import pom.SwagLabsLoginPage;
 import pom.SwagLabsProductpage;
 import utility.BaseClass;
-import utility.ExtentReport;
-
 @Listeners(utility.Listeners.class)
 public class SwagLabs3ProductpageTest extends BaseClass{
-	
-	ExtentReports reports;
-	ExtentTest test;
-	
-	@BeforeTest
-	public void configureReport() {
-		reports = ExtentReport.createExtentReports();
-		reports.setSystemInfo("Test Suite", "Regression Test");
-		reports.setSystemInfo("Test Performed By", "Krushna Patare");
-	}
-	
 	
 	@BeforeMethod()
 	public void openInventorypage() throws InterruptedException {
@@ -46,6 +26,11 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		swagLabsLoginPage.clickOnLogin(); 
 	}
 	
+	@AfterMethod
+	public void closeBrowser (ITestResult result ) {
+		
+		driver.quit();
+	}
 	
 	@Test(priority = 1)
 	public void clickProduct_ProductImg_OpenedProductpage() throws InterruptedException {
@@ -57,7 +42,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expectedUrl, actualUrl);
-		test = reports.createTest("clickProduct_ProductImg_OpenedProductpage");
 		Thread.sleep(100);
 	}
 	
@@ -72,7 +56,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expectedUrl, actualUrl);
-		test = reports.createTest("clickProduct_ProductBanner_OpenedProductpage");
 		Thread.sleep(100);
 	}
 
@@ -91,7 +74,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expectedDescription = "+expectedDescription);
 		System.out.println("actualDescription = "+actualDescription);
 		Assert.assertEquals(expectedDescription, actualDescription);
-		test = reports.createTest("clickProduct_ProductBanner$Description$Price_Checked");
 		Thread.sleep(100);
 	}
 	
@@ -107,7 +89,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expectedText = "+expectedText);
 		System.out.println("actualText = "+actualText);
 		Assert.assertEquals(expectedText, actualText);
-		test = reports.createTest("clickProduct_AddProductButton_AddedToCart");
 		Thread.sleep(100);
 	}
 	
@@ -134,7 +115,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expectedCheck = "+expectedCheck);
 		System.out.println("actualCheck = "+actualCheck);
 		Assert.assertEquals(expectedCheck, actualCheck);
-		test = reports.createTest("clickProduct_RemoveProductButton_RemovedFromCart");
 		Thread.sleep(100);
 	}
 
@@ -150,7 +130,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expectedText = "+expectedText);
 		System.out.println("actualText = "+actualText);
 		Assert.assertEquals(expectedText, actualText);
-		test = reports.createTest("clickProduct_ProductAddOrRemoveButton_Clickable");
 		Thread.sleep(100);
 	}
 		
@@ -167,7 +146,6 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println("expextedUrl = "+expextedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expextedUrl, actualUrl);
-		test = reports.createTest("clickProduct_BackToProductsButton_GoneToHomepage");
 		Thread.sleep(100);
 	}
 	
@@ -182,35 +160,8 @@ public class SwagLabs3ProductpageTest extends BaseClass{
 		System.out.println(actualTitle);
 		System.out.println(expectedTitle);
 		Assert.assertEquals(actualTitle, expectedTitle);
-		test = reports.createTest("clickCart_Clickable_OpenedCart");
 	}
 
 	
-	@AfterMethod
-	public void publishResult (ITestResult result) {
-		
-		if(result.getStatus()==ITestResult.SUCCESS) {
-			
-        	test.log(Status.PASS,result.getName());
-		   }
-        
-		else if(result.getStatus()==ITestResult.FAILURE) {
-			
-			test.log(Status.FAIL, result.getName());
-			}
-		
-		else if(result.getStatus()==ITestResult.SKIP) {
-			
-			test.log(Status.SKIP, result.getName());
-			}
-		
-		driver.close();		
-	}
-
-	
-	@AfterTest
-	public void createReport() {
-		reports.flush();
-	}
 
 }

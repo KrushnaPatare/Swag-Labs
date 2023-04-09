@@ -4,7 +4,7 @@
 <parameter name="browser" value="chrome"></parameter>
   <test thread-count="1" name="Test">
     <classes>
-      <class name="test.SwagLabs7CheckoutCompletepage"/>
+      <class name="test.SwagLabs1LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

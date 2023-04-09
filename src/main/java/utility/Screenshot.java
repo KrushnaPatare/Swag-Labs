@@ -12,15 +12,16 @@ import org.openqa.selenium.io.FileHandler;
 
 public class Screenshot {
 
-	public static void takeScreenshot(WebDriver driver, String name) throws IOException {
+	public static String takeScreenshot(WebDriver driver, String name) throws IOException {
 		
 		LocalDateTime time = LocalDateTime.now();
-		DateTimeFormatter customFormat = DateTimeFormatter.ofPattern("dd-mm-yyyy & hh-mm-ss");
+		DateTimeFormatter customFormat = DateTimeFormatter.ofPattern("dd-mm-yyyy hh-mm-ss a");
 		String realTime = time.format(customFormat);
 		File source = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File destination = new File("F:\\Selenium Screenshot\\" +name +realTime +".png");
+		String screenshotDestinationPath = "F:\\Selenium Screenshot\\" +name +realTime +".png";
+		File destination = new File(screenshotDestinationPath);
 		FileHandler.copy(source, destination);
-		
+		return screenshotDestinationPath;
 	}
 	
 

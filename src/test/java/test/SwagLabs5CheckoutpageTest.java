@@ -5,36 +5,20 @@ import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
 import pojo.Browser;
 import pom.SwagLabCheckoutStepOnePage;
 import pom.SwagLabsCartPage;
 import pom.SwagLabsLoginPage;
 import pom.SwagLabsProductpage;
 import utility.BaseClass;
-import utility.ExtentReport;
 import utility.Parameterization;
 
 @Listeners(utility.Listeners.class)
 public class SwagLabs5CheckoutpageTest extends BaseClass{
-	
-	ExtentReports reports;
-	ExtentTest test;
-	
-	@BeforeTest
-	public void configureReport() {
-		reports = ExtentReport.createExtentReports();
-		reports.setSystemInfo("Test Suite", "Regression Test");
-		reports.setSystemInfo("Test Performed By", "Krushna Patare");
-	}
 	
 	@Parameters("browser")
 	@BeforeMethod
@@ -53,6 +37,11 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		 swagLabsCartPage.clickOnCheckoutButton();
 	}
 
+	@AfterMethod
+	public void closeBrowser (ITestResult result ) {
+		
+		driver.quit();
+	}
 	
 	@Test(priority=1)
 	public void clickCheckout_FirstnamePlaceholderText_Displayed() throws InterruptedException {
@@ -63,7 +52,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("actualPlaceHolderText = "+actualPlaceHolderText);
 		System.out.println("expectedPlaceHolderText = "+expectedPlaceHolderText);
 		Assert.assertEquals(actualPlaceHolderText, expectedPlaceHolderText);
-		test = reports.createTest("clickCheckout_FirstnamePlaceholderText_Displayed");
 		Thread.sleep(100);
 	}
 
@@ -77,7 +65,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("actualPlaceHolderText = "+actualPlaceHolderText);
 		System.out.println("expectedPlaceHolderText = "+expectedPlaceHolderText);
 		Assert.assertEquals(actualPlaceHolderText, expectedPlaceHolderText);
-		test = reports.createTest("clickCheckout_LastnamePlaceholderText_Displayed");
 		Thread.sleep(100);
 	}
 
@@ -91,7 +78,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("actualPlaceHolderText = "+actualPlaceHolderText);
 		System.out.println("expectedPlaceHolderText = "+expectedPlaceHolderText);
 		Assert.assertEquals(actualPlaceHolderText, expectedPlaceHolderText);
-		test = reports.createTest("clickCheckout_PincodePlaceholderText_Displayed");
 		Thread.sleep(100);
 	}
 	
@@ -112,7 +98,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expectedUrl,actualUrl);
-		test = reports.createTest("clickCheckout_InvalidFirstname_DisplayedErrorMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -133,7 +118,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expectedUrl,actualUrl);
-		test = reports.createTest("clickCheckout_InvalidLastname_DisplayedErrorMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -156,7 +140,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expectedUrl,actualUrl);
-		test = reports.createTest("clickCheckout_InvalidZipcode_DisplayedErrorMSG"  );
 		Thread.sleep(100);
 	}
 
@@ -171,7 +154,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		 test = reports.createTest("clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG"  );
 		 Thread.sleep(100);
 	}
 	
@@ -187,7 +169,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -206,7 +187,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);	
 	}
 	
@@ -227,7 +207,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -244,7 +223,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);
 	}	
 	
@@ -263,7 +241,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -280,7 +257,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);
 	}
 
@@ -299,7 +275,6 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedMessage = "+expectedMessage);
 		System.out.println("actualMessage = "+actualMessage);
 		Assert.assertEquals(expectedMessage,actualMessage);
-		test = reports.createTest("clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG"  );
 		Thread.sleep(100);
 	}
 	
@@ -314,28 +289,8 @@ public class SwagLabs5CheckoutpageTest extends BaseClass{
 		System.out.println("expectedUrl = "+expectedUrl);
 		System.out.println("actualUrl = "+actualUrl);
 		Assert.assertEquals(expectedUrl,actualUrl);
-		test = reports.createTest("clickCheckout_CancelButton_RedirectedToCartpage"  );
 		Thread.sleep(100);
 	}
 
-	
-	@AfterMethod
-	public void publishResult (ITestResult result ) {
-		
-		if(result.getStatus()==ITestResult.SUCCESS)
-	    {test.log(Status.PASS,result.getName());}
-	    
-		else if(result.getStatus()==ITestResult.FAILURE) 
-		{test.log(Status.FAIL, result.getName());}
-		
-		else if(result.getStatus()==ITestResult.SKIP)
-		{test.log(Status.SKIP, result.getName());}
-		
-		driver.close();
-	}
-
-	@AfterTest
-	public void createReport()
-	{reports.flush();}
 		
 }
