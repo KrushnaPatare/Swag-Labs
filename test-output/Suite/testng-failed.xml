@@ -6,19 +6,9 @@
     <classes>
       <class name="test.SwagLabs1LoginTest">
         <methods>
-          <include name="doLogin_PlaceHolderText_Displayed"/>
-          <include name="doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG"/>
           <include name="closeBrowser"/>
-          <include name="doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText"/>
           <include name="launchBrowser"/>
-          <include name="doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG"/>
-          <include name="doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG"/>
-          <include name="doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG"/>
-          <include name="doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG"/>
-          <include name="doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG"/>
-          <include name="doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG"/>
-          <include name="doLogin_Clickable_CompletedLogin"/>
-          <include name="doLogin_1ValidId2ValidPwd_OpenedHomepage"/>
+          <include name="doLogin_1ValidId2ValidPwd_OpenedHomepage" invocation-numbers="1"/>
         </methods>
       </class> <!-- test.SwagLabs1LoginTest -->
     </classes>

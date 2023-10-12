@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -63,7 +61,7 @@ public class SwagLabsHomepage {
 			return pageTitle;
 		}
 		
-		public List <String> clickOnOpenMenuButton() {
+		public ArrayList <String> clickOnOpenMenuButton() {
 			
 			openMenuButton.click();
 			ArrayList<String> actOpAll = new ArrayList<String>();

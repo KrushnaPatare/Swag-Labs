@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>60/10/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>64/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 08 18:56:28 IST 2023</td>
+<td>Started on:</td><td>Thu Sep 28 13:07:20 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>415 seconds (415809 ms)</td>
+<tr><td>Total time:</td><td>384 seconds (384965 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -70,480 +70,112 @@ function toggleAllBoxes() {
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG()'><b>clickCheckout_InvalidLastname_DisplayedErrorMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG()'><b>clickCheckout_InvalidLastname_DisplayedErrorMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG(SwagLabs5CheckoutpageTest.java:120)
+	at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:118)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431000859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1431000859'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG(SwagLabs5CheckoutpageTest.java:120)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace938595680", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace938595680'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:118)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG()'><b>clickCheckout_InvalidFirstname_DisplayedErrorMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG()'><b>clickCheckout_InvalidZipcode_DisplayedErrorMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG(SwagLabs5CheckoutpageTest.java:100)
+	at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:140)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1292142917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1292142917'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG(SwagLabs5CheckoutpageTest.java:100)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace122465645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace122465645'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG()'><b>clickCheckout_InvalidZipcode_DisplayedErrorMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG(SwagLabs5CheckoutpageTest.java:142)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace748932694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace748932694'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG(SwagLabs5CheckoutpageTest.java:142)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1FillFirstN2FillLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2FillLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;error&apos;]&quot;}
-  (Session info: chrome=111.0.5563.148)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6bbe6fca59f9f8460e17c20a8a1fa965, findElement {using=xpath, value=//h3[@data-test=&apos;error&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54180/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bbe6fca59f9f8460e17c20a8a1fa965
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at pom.SwagLabCheckoutStepOnePage.getErrorMSG(SwagLabCheckoutStepOnePage.java:56)
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_1FillFirstN2FillLastN3FillZipcode_DisplayedWarningMSG(SwagLabs5CheckoutpageTest.java:205)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1353726249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1353726249'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[@data-test=&apos;error&apos;]&quot;}
-  (Session info: chrome=111.0.5563.148)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6bbe6fca59f9f8460e17c20a8a1fa965, findElement {using=xpath, value=//h3[@data-test=&apos;error&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54180/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6bbe6fca59f9f8460e17c20a8a1fa965
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.getText(Unknown Source)
-	at pom.SwagLabCheckoutStepOnePage.getErrorMSG(SwagLabCheckoutStepOnePage.java:56)
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_1FillFirstN2FillLastN3FillZipcode_DisplayedWarningMSG(SwagLabs5CheckoutpageTest.java:205)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>5</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginTest<br>Parameters: locked_out_user, secret_sauce</td>
-<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
-	at test.SwagLabs1LoginTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(SwagLabs1LoginTest.java:57)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409712092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1409712092'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.SwagLabs1LoginTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(SwagLabs1LoginTest.java:57)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickOpenMenu_$About$Option_OpenedLinkedPage()'><b>clickOpenMenu_$About$Option_OpenedLinkedPage</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [913c95bc0e72426b62773f8d8569aa2c, clickElement {id=29a0e210-0aad-4f28-a62e-ea6d023ead17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53231/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (913c95bc0e72426b62773f8d8569aa2c)] -&gt; xpath: //a[text()=&apos;About&apos;]]
-Session ID: 913c95bc0e72426b62773f8d8569aa2c
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pom.SwagLabsHomepage.clickOnaboutButton(SwagLabsHomepage.java:85)
-	at test.SwagLabs2HomepageTest.clickOpenMenu_$About$Option_OpenedLinkedPage(SwagLabs2HomepageTest.java:290)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311642344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace311642344'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [913c95bc0e72426b62773f8d8569aa2c, clickElement {id=29a0e210-0aad-4f28-a62e-ea6d023ead17}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53231}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53231/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (913c95bc0e72426b62773f8d8569aa2c)] -&gt; xpath: //a[text()=&apos;About&apos;]]
-Session ID: 913c95bc0e72426b62773f8d8569aa2c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pom.SwagLabsHomepage.clickOnaboutButton(SwagLabsHomepage.java:85)
-	at test.SwagLabs2HomepageTest.clickOpenMenu_$About$Option_OpenedLinkedPage(SwagLabs2HomepageTest.java:290)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_PincodePlaceholderText_Displayed()'><b>clickCheckout_PincodePlaceholderText_Displayed</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Zip/Postal Code] but found [Last Name]
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_PincodePlaceholderText_Displayed(SwagLabs5CheckoutpageTest.java:80)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace932384584", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace932384584'><pre>java.lang.AssertionError: expected [Zip/Postal Code] but found [Last Name]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.SwagLabs5CheckoutpageTest.clickCheckout_PincodePlaceholderText_Displayed(SwagLabs5CheckoutpageTest.java:80)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickFacebookTab_SocialSite_OpenedFacebookPage()'><b>clickFacebookTab_SocialSite_OpenedFacebookPage</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b93acd4ddcb5b039b97312e0bee8aa15, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b93acd4ddcb5b039b97312e0bee8aa15
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:309)
-	at pom.SwagLabsHomepage.clickOnFacebookButton(SwagLabsHomepage.java:147)
-	at test.SwagLabs2HomepageTest.clickFacebookTab_SocialSite_OpenedFacebookPage(SwagLabs2HomepageTest.java:408)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1021778875", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1021778875'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 10.000
-  (Session info: chrome=111.0.5563.148)
-Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b93acd4ddcb5b039b97312e0bee8aa15, getCurrentUrl {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53500}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53500/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b93acd4ddcb5b039b97312e0bee8aa15
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:309)
-	at pom.SwagLabsHomepage.clickOnFacebookButton(SwagLabsHomepage.java:147)
-	at test.SwagLabs2HomepageTest.clickFacebookTab_SocialSite_OpenedFacebookPage(SwagLabs2HomepageTest.java:408)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>10</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_ProductOrder_UnarrangedLikeBefore()'><b>clickSort_ProductOrder_UnarrangedLikeBefore</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_ProductOrder_UnarrangedLikeBefore()'><b>clickSort_ProductOrder_UnarrangedLikeBefore</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.148)
+  (Session info: chrome=112.0.5615.50)
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c229e56ddf0b532337892c9525c76077, clickElement {id=17c07da1-5a94-4141-986c-6762caeb2553}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53140/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c229e56ddf0b532337892c9525c76077)] -&gt; xpath: //a[text()=&apos;Reset App State&apos;]]
-Session ID: c229e56ddf0b532337892c9525c76077
+Command: [1a0fde12f712f37513a9ccf5d6a8173a, clickElement {id=868a58dc-0dd7-488f-9065-e2f3c55acd64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58577}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58577/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1a0fde12f712f37513a9ccf5d6a8173a)] -&gt; xpath: //a[text()=&apos;All Items&apos;]]
+Session ID: 1a0fde12f712f37513a9ccf5d6a8173a
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -555,22 +187,24 @@ Session ID: c229e56ddf0b532337892c9525c76077
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pom.SwagLabsHomepage.clickOnresetAppStateButton(SwagLabsHomepage.java:95)
-	at test.SwagLabs2HomepageTest.clickSort_ProductOrder_UnarrangedLikeBefore(SwagLabs2HomepageTest.java:215)
+	at pom.SwagLabsHomepage.clickOnAllItemsButton(SwagLabsHomepage.java:78)
+	at test.SwagLabs2InventoryPageTest.clickSort_ProductOrder_UnarrangedLikeBefore(SwagLabs2InventoryPageTest.java:209)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1800022151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1800022151'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.148)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726377177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726377177'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.50)
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c229e56ddf0b532337892c9525c76077, clickElement {id=17c07da1-5a94-4141-986c-6762caeb2553}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53140}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53140/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (c229e56ddf0b532337892c9525c76077)] -&gt; xpath: //a[text()=&apos;Reset App State&apos;]]
-Session ID: c229e56ddf0b532337892c9525c76077
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+Command: [1a0fde12f712f37513a9ccf5d6a8173a, clickElement {id=868a58dc-0dd7-488f-9065-e2f3c55acd64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58577}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58577/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1a0fde12f712f37513a9ccf5d6a8173a)] -&gt; xpath: //a[text()=&apos;All Items&apos;]]
+Session ID: 1a0fde12f712f37513a9ccf5d6a8173a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -580,392 +214,508 @@ Session ID: c229e56ddf0b532337892c9525c76077
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at pom.SwagLabsHomepage.clickOnresetAppStateButton(SwagLabsHomepage.java:95)
-	at test.SwagLabs2HomepageTest.clickSort_ProductOrder_UnarrangedLikeBefore(SwagLabs2HomepageTest.java:215)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at pom.SwagLabsHomepage.clickOnAllItemsButton(SwagLabsHomepage.java:78)
+	at test.SwagLabs2InventoryPageTest.clickSort_ProductOrder_UnarrangedLikeBefore(SwagLabs2InventoryPageTest.java:209)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>5</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickOpenMenu_Clickable_OpenedAllOptions()'><b>clickOpenMenu_Clickable_OpenedAllOptions</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickOpenMenu_Clickable_OpenedAllOptions()'><b>clickOpenMenu_Clickable_OpenedAllOptions</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td><div><pre>java.lang.AssertionError: expected [] but found [All Items]
-	at test.SwagLabs2HomepageTest.clickOpenMenu_Clickable_OpenedAllOptions(SwagLabs2HomepageTest.java:279)
+	at test.SwagLabs2InventoryPageTest.clickOpenMenu_Clickable_OpenedAllOptions(SwagLabs2InventoryPageTest.java:271)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1474270145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1474270145'><pre>java.lang.AssertionError: expected [] but found [All Items]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at test.SwagLabs2HomepageTest.clickOpenMenu_Clickable_OpenedAllOptions(SwagLabs2HomepageTest.java:279)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1182015948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1182015948'><pre>java.lang.AssertionError: expected [] but found [All Items]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at test.SwagLabs2InventoryPageTest.clickOpenMenu_Clickable_OpenedAllOptions(SwagLabs2InventoryPageTest.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG()'><b>clickCheckout_InvalidFirstname_DisplayedErrorMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1225761077", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1225761077'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:98)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginPageTest<br>Parameters: locked_out_user, secret_sauce</td>
+<td><div><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(SwagLabs1LoginPageTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1948689480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1948689480'><pre>java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(SwagLabs1LoginPageTest.java:57)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()'><b>doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
+<td title='test.SwagLabs4CartPageTest.clickCart_AddedProducts_Removed()'><b>clickCart_AddedProducts_Removed</b><br>Test class: test.SwagLabs4CartPageTest</td>
+<td></td>
+<td>5</td>
+<td>test.SwagLabs4CartPageTest@1190200a</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_Clickable_OpenedDropdown()'><b>clickSort_Clickable_OpenedDropdown</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs6CheckoutOverviewPageTest.openCheckoutOverview_PurchaseInformation_Checked()'><b>openCheckoutOverview_PurchaseInformation_Checked</b><br>Test class: test.SwagLabs6CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickFacebookTab_SocialSite_OpenedFacebookPage()'><b>clickFacebookTab_SocialSite_OpenedFacebookPage</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>1</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_ProductBanner$Description$Price_Checked()'><b>clickProduct_ProductBanner$Description$Price_Checked</b><br>Test class: test.SwagLabs3ProductpageTest</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG()'><b>doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs7CheckoutCompletepage.openCheckoutComplete_GreetInformation_Displyed()'><b>openCheckoutComplete_GreetInformation_Displyed</b><br>Test class: test.SwagLabs7CheckoutCompletepage</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs7CheckoutCompletepage@5656be13</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs4CartpageTest.clickCart_CheckoutButton_OpenedCheckoutpage()'><b>clickCart_CheckoutButton_OpenedCheckoutpage</b><br>Test class: test.SwagLabs4CartpageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_ProductsBefore_PredefinedNumber()'><b>clickSort_ProductsBefore_PredefinedNumber</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs4CartpageTest@55141def</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs4CartpageTest.clickCart_AddedProducts_Removed()'><b>clickCart_AddedProducts_Removed</b><br>Test class: test.SwagLabs4CartpageTest</td>
+<td title='test.SwagLabs4CartPageTest.clickCart_AddedProducts_ShowedDetails()'><b>clickCart_AddedProducts_ShowedDetails</b><br>Test class: test.SwagLabs4CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs4CartPageTest@1190200a</td></tr>
+<tr>
+<td title='test.SwagLabs6CheckoutOverviewPageTest.openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete()'><b>openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete</b><br>Test class: test.SwagLabs6CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickSortBefore_DoOtherActions_SavedSortingType()'><b>clickSortBefore_DoOtherActions_SavedSortingType</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_ProductBanner_OpenedProductpage()'><b>clickProduct_ProductBanner_OpenedProductpage</b><br>Test class: test.SwagLabs3ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginPageTest<br>Parameters: performance_glitch_user, secret_sauce</td>
 <td></td>
 <td>5</td>
-<td>test.SwagLabs4CartpageTest@55141def</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText()'><b>doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText</b><br>Test class: test.SwagLabs1LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG()'><b>doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_PincodePlaceholderText_Displayed()'><b>clickCheckout_PincodePlaceholderText_Displayed</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickSortAfter_PreviousSortedResults_GotSortedAgain()'><b>clickSortAfter_PreviousSortedResults_GotSortedAgain</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.verifyCartTab_TotalProductNumber_ShowedInNotification()'><b>verifyCartTab_TotalProductNumber_ShowedInNotification</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>2</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully()'><b>verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_AddProductButton_AddedToCart()'><b>clickProduct_AddProductButton_AddedToCart</b><br>Test class: test.SwagLabs3ProductpageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_ProductDescending_GotInOrder()'><b>clickSort_ProductDescending_GotInOrder</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickSortBefore_DoOtherActions_SavedSortingType()'><b>clickSortBefore_DoOtherActions_SavedSortingType</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickOpenMenu_$Logout$Option_LoggedoutUser()'><b>clickOpenMenu_$Logout$Option_LoggedoutUser</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs3ProductpageTest.clickCart_Clickable_OpenedCart()'><b>clickCart_Clickable_OpenedCart</b><br>Test class: test.SwagLabs3ProductpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_FirstnamePlaceholderText_Displayed()'><b>clickCheckout_FirstnamePlaceholderText_Displayed</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginTest<br>Parameters: performance_glitch_user, secret_sauce</td>
+<td title='test.SwagLabs2InventoryPageTest.clickOpenMenu_$ResetAppState$Option_DefaultAppState()'><b>clickOpenMenu_$ResetAppState$Option_DefaultAppState</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>5</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.verifyHomepageFooter_Text_Checked()'><b>verifyHomepageFooter_Text_Checked</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.verifyHomepage_LogoPresendAndSpelling_Checked()'><b>verifyHomepage_LogoPresendAndSpelling_Checked</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG()'><b>doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
+<td title='test.SwagLabs7CheckoutCompletepageTest.openCheckoutComplete_BackToHomeButton_RedirectedToProductpage()'><b>openCheckoutComplete_BackToHomeButton_RedirectedToProductpage</b><br>Test class: test.SwagLabs7CheckoutCompletepageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs7CheckoutCompletepageTest@399c4be1</td></tr>
+<tr>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_BackToProductsButton_GoneToHomepage()'><b>clickProduct_BackToProductsButton_GoneToHomepage</b><br>Test class: test.SwagLabs3ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickLinkedTab_SocialSite_OpenedLinkedPage()'><b>clickLinkedTab_SocialSite_OpenedLinkedPage</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>2</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG()'><b>doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
 <td></td>
 <td>11</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_PlaceHolderText_Displayed()'><b>doLogin_PlaceHolderText_Displayed</b><br>Test class: test.SwagLabs1LoginTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_FirstnamePlaceholderText_Displayed()'><b>clickCheckout_FirstnamePlaceholderText_Displayed</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_ProductImg_OpenedProductpage()'><b>clickProduct_ProductImg_OpenedProductpage</b><br>Test class: test.SwagLabs3ProductPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully()'><b>verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_PlaceHolderText_Displayed()'><b>doLogin_PlaceHolderText_Displayed</b><br>Test class: test.SwagLabs1LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts()'><b>clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickOpenMenu_CloseMenuButton_ClosedAllOptions()'><b>clickOpenMenu_CloseMenuButton_ClosedAllOptions</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_Clickable_CompletedLogin()'><b>doLogin_Clickable_CompletedLogin</b><br>Test class: test.SwagLabs1LoginTest</td>
+<td title='test.SwagLabs3ProductPageTest.clickCart_Clickable_OpenedCart()'><b>clickCart_Clickable_OpenedCart</b><br>Test class: test.SwagLabs3ProductPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_ProductsBefore_PredefinedNumber()'><b>clickSort_ProductsBefore_PredefinedNumber</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_PriceHighToLow_GotInOrder()'><b>clickSort_PriceHighToLow_GotInOrder</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs6CheckoutOverviewpage.openCheckoutOverview_PurchaseInformation_Checked()'><b>openCheckoutOverview_PurchaseInformation_Checked</b><br>Test class: test.SwagLabs6CheckoutOverviewpage</td>
+<td title='test.SwagLabs4CartPageTest.clickCart_ContinueShoppingButton_RedirectedToHomepage()'><b>clickCart_ContinueShoppingButton_RedirectedToHomepage</b><br>Test class: test.SwagLabs4CartPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs6CheckoutOverviewpage@235834f2</td></tr>
+<td>test.SwagLabs4CartPageTest@1190200a</td></tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginTest<br>Parameters: standard_user, secret_sauce</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG()'><b>doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_ProductDescending_GotInOrder()'><b>clickSort_ProductDescending_GotInOrder</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_ProductAddOrRemoveButton_Clickable()'><b>clickProduct_ProductAddOrRemoveButton_Clickable</b><br>Test class: test.SwagLabs3ProductPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.verifyCartTab_TotalProductNumber_ShowedInNotification()'><b>verifyCartTab_TotalProductNumber_ShowedInNotification</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>2</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_PriceHighToLow_GotInOrder()'><b>clickSort_PriceHighToLow_GotInOrder</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText()'><b>doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText</b><br>Test class: test.SwagLabs1LoginTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_Clickable_OpenedDropdown()'><b>clickSort_Clickable_OpenedDropdown</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_LastnamePlaceholderText_Displayed()'><b>clickCheckout_LastnamePlaceholderText_Displayed</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG()'><b>doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_OptionsList_CheckedAllOptions()'><b>clickSort_OptionsList_CheckedAllOptions</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickOpenMenu_CloseMenuButton_ClosedAllOptions()'><b>clickOpenMenu_CloseMenuButton_ClosedAllOptions</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_PriceLowToHigh_GotInOrder()'><b>clickSort_PriceLowToHigh_GotInOrder</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_CancelButton_RedirectedToCartpage()'><b>clickCheckout_CancelButton_RedirectedToCartpage</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.verifyHomepage_LogoPresendAndSpelling_Checked()'><b>verifyHomepage_LogoPresendAndSpelling_Checked</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()'><b>doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
-<tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG()'><b>doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
-<tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginTest<br>Parameters: problem_user, secret_sauce</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
-<tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_ProductImg_OpenedProductpage()'><b>clickProduct_ProductImg_OpenedProductpage</b><br>Test class: test.SwagLabs3ProductpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
-<tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_BackToProductsButton_GoneToHomepage()'><b>clickProduct_BackToProductsButton_GoneToHomepage</b><br>Test class: test.SwagLabs3ProductpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
-<tr>
-<td title='test.SwagLabs2HomepageTest.clickLinkedTab_SocialSite_OpenedLinkedPage()'><b>clickLinkedTab_SocialSite_OpenedLinkedPage</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>2</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs4CartpageTest.clickCart_ContinueShoppingButton_RedirectedToHomepage()'><b>clickCart_ContinueShoppingButton_RedirectedToHomepage</b><br>Test class: test.SwagLabs4CartpageTest</td>
-<td></td>
-<td>0</td>
-<td>test.SwagLabs4CartpageTest@55141def</td></tr>
-<tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_RemoveProductButton_RemovedFromCart()'><b>clickProduct_RemoveProductButton_RemovedFromCart</b><br>Test class: test.SwagLabs3ProductpageTest</td>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_RemoveProductButton_RemovedFromCart()'><b>clickProduct_RemoveProductButton_RemovedFromCart</b><br>Test class: test.SwagLabs3ProductPageTest</td>
 <td></td>
 <td>6</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
 <tr>
-<td title='test.SwagLabs4CartpageTest.clickCart_AddedProducts_ShowedDetails()'><b>clickCart_AddedProducts_ShowedDetails</b><br>Test class: test.SwagLabs4CartpageTest</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginPageTest<br>Parameters: standard_user, secret_sauce</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs4CartpageTest@55141def</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_ProductAscending_GotInOrder()'><b>clickSort_ProductAscending_GotInOrder</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_ProductAddOrRemoveButton_Clickable()'><b>clickProduct_ProductAddOrRemoveButton_Clickable</b><br>Test class: test.SwagLabs3ProductpageTest</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG()'><b>doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
+<tr>
+<td title='test.SwagLabs7CheckoutCompletepageTest.openCheckoutComplete_GreetInformation_Displyed()'><b>openCheckoutComplete_GreetInformation_Displyed</b><br>Test class: test.SwagLabs7CheckoutCompletepageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
+<td>test.SwagLabs7CheckoutCompletepageTest@399c4be1</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickOpenMenu_$ResetAppState$Option_DefaultAppState()'><b>clickOpenMenu_$ResetAppState$Option_DefaultAppState</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs4CartPageTest.clickCart_CheckoutButton_OpenedCheckoutpage()'><b>clickCart_CheckoutButton_OpenedCheckoutpage</b><br>Test class: test.SwagLabs4CartPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs4CartPageTest@1190200a</td></tr>
+<tr>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_CancelButton_RedirectedToCartpage()'><b>clickCheckout_CancelButton_RedirectedToCartpage</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()'><b>doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
+<tr>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2()'><b>clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.verifyHomepageFooter_Text_Checked()'><b>verifyHomepageFooter_Text_Checked</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_ProductCountAfter_RemainedSame()'><b>clickSort_ProductCountAfter_RemainedSame</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
+<tr>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickSortAfter_PreviousSortedResults_GotSortedAgain()'><b>clickSortAfter_PreviousSortedResults_GotSortedAgain</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickTwitterTab_SocialSite_OpenedTwitterPage()'><b>clickTwitterTab_SocialSite_OpenedTwitterPage</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>5</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs1LoginTest.doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG()'><b>doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG</b><br>Test class: test.SwagLabs1LoginTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_PriceLowToHigh_GotInOrder()'><b>clickSort_PriceLowToHigh_GotInOrder</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs1LoginTest@59662a0b</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs3ProductpageTest.clickProduct_ProductBanner_OpenedProductpage()'><b>clickProduct_ProductBanner_OpenedProductpage</b><br>Test class: test.SwagLabs3ProductpageTest</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_OptionsList_CheckedAllOptions()'><b>clickSort_OptionsList_CheckedAllOptions</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs3ProductpageTest@47eaca72</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickSort_ProductCountAfter_RemainedSame()'><b>clickSort_ProductCountAfter_RemainedSame</b><br>Test class: test.SwagLabs2HomepageTest</td>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_ProductBanner$Description$Price_Checked()'><b>clickProduct_ProductBanner$Description$Price_Checked</b><br>Test class: test.SwagLabs3ProductPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
 <tr>
-<td title='test.SwagLabs5CheckoutpageTest.clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutpageTest</td>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG()'><b>doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
+<td></td>
+<td>1</td>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_Clickable_CompletedLogin()'><b>doLogin_Clickable_CompletedLogin</b><br>Test class: test.SwagLabs1LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs5CheckoutpageTest@55182842</td></tr>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
 <tr>
-<td title='test.SwagLabs6CheckoutOverviewpage.openCheckoutOverview_CancelButton_RedirectedToProductpage()'><b>openCheckoutOverview_CancelButton_RedirectedToProductpage</b><br>Test class: test.SwagLabs6CheckoutOverviewpage</td>
+<td title='test.SwagLabs2InventoryPageTest.clickOpenMenu_$About$Option_OpenedLinkedPage()'><b>clickOpenMenu_$About$Option_OpenedLinkedPage</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>5</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickOpenMenu_$Logout$Option_LoggedoutUser()'><b>clickOpenMenu_$Logout$Option_LoggedoutUser</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs6CheckoutOverviewpage@235834f2</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
 <tr>
-<td title='test.SwagLabs2HomepageTest.clickTwitterTab_SocialSite_OpenedTwitterPage()'><b>clickTwitterTab_SocialSite_OpenedTwitterPage</b><br>Test class: test.SwagLabs2HomepageTest</td>
-<td></td>
-<td>10</td>
-<td>test.SwagLabs2HomepageTest@1aafa419</td></tr>
-<tr>
-<td title='test.SwagLabs6CheckoutOverviewpage.openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete()'><b>openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete</b><br>Test class: test.SwagLabs6CheckoutOverviewpage</td>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()'><b>clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs6CheckoutOverviewpage@235834f2</td></tr>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 <tr>
-<td title='test.SwagLabs7CheckoutCompletepage.openCheckoutComplete_BackToHomeButton_RedirectedToProductpage()'><b>openCheckoutComplete_BackToHomeButton_RedirectedToProductpage</b><br>Test class: test.SwagLabs7CheckoutCompletepage</td>
+<td title='test.SwagLabs2InventoryPageTest.clickSort_ProductAscending_GotInOrder()'><b>clickSort_ProductAscending_GotInOrder</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>test.SwagLabs7CheckoutCompletepage@5656be13</td></tr>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs6CheckoutOverviewPageTest.openCheckoutOverview_CancelButton_RedirectedToProductpage()'><b>openCheckoutOverview_CancelButton_RedirectedToProductpage</b><br>Test class: test.SwagLabs6CheckoutOverviewPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()'><b>doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG</b><br>Test class: test.SwagLabs1LoginPageTest</td>
+<td></td>
+<td>2</td>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
+<tr>
+<td title='test.SwagLabs3ProductPageTest.clickProduct_AddProductButton_AddedToCart()'><b>clickProduct_AddProductButton_AddedToCart</b><br>Test class: test.SwagLabs3ProductPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs3ProductPageTest@707194ba</td></tr>
+<tr>
+<td title='test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage()'><b>doLogin_1ValidId2ValidPwd_OpenedHomepage</b><br>Test class: test.SwagLabs1LoginPageTest<br>Parameters: problem_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs1LoginPageTest@247bddad</td></tr>
+<tr>
+<td title='test.SwagLabs2InventoryPageTest.clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts()'><b>clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts</b><br>Test class: test.SwagLabs2InventoryPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs2InventoryPageTest@75db5df9</td></tr>
+<tr>
+<td title='test.SwagLabs5CheckoutPageTest.clickCheckout_LastnamePlaceholderText_Displayed()'><b>clickCheckout_LastnamePlaceholderText_Displayed</b><br>Test class: test.SwagLabs5CheckoutPageTest</td>
+<td></td>
+<td>0</td>
+<td>test.SwagLabs5CheckoutPageTest@6a2f6f80</td></tr>
 </table><p>
 </body>
 </html>

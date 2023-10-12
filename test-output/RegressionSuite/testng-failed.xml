@@ -4,34 +4,30 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.SwagLabs5CheckoutpageTest">
+      <class name="test.SwagLabs1LoginPageTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="clickCheckout_InvalidFirstname_DisplayedErrorMSG"/>
-          <include name="clickCheckout_InvalidZipcode_DisplayedErrorMSG"/>
-          <include name="clickCheckout_PincodePlaceholderText_Displayed"/>
-          <include name="clickCheckout_InvalidLastname_DisplayedErrorMSG"/>
-          <include name="clickCheckout_1FillFirstN2FillLastN3FillZipcode_DisplayedWarningMSG"/>
-          <include name="launchBrowser"/>
+          <include name="doLogin_1ValidId2ValidPwd_OpenedHomepage" invocation-numbers="1"/>
+          <include name="openLoginPageSetup"/>
         </methods>
-      </class> <!-- test.SwagLabs5CheckoutpageTest -->
-      <class name="test.SwagLabs2HomepageTest">
+      </class> <!-- test.SwagLabs1LoginPageTest -->
+      <class name="test.SwagLabs5CheckoutPageTest">
         <methods>
-          <include name="clickFacebookTab_SocialSite_OpenedFacebookPage"/>
+          <include name="openCheckoutPageSetup"/>
+          <include name="clickCheckout_InvalidZipcode_DisplayedErrorMSG"/>
+          <include name="clickCheckout_InvalidLastname_DisplayedErrorMSG"/>
+          <include name="clickCheckout_InvalidFirstname_DisplayedErrorMSG"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.SwagLabs5CheckoutPageTest -->
+      <class name="test.SwagLabs2InventoryPageTest">
+        <methods>
           <include name="clickSort_ProductOrder_UnarrangedLikeBefore"/>
-          <include name="clickOpenMenu_$About$Option_OpenedLinkedPage"/>
-          <include name="openInventorypage"/>
           <include name="clickOpenMenu_Clickable_OpenedAllOptions"/>
           <include name="closeBrowser"/>
+          <include name="openInventoryPageSetup"/>
         </methods>
-      </class> <!-- test.SwagLabs2HomepageTest -->
-      <class name="test.SwagLabs1LoginTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="doLogin_1ValidId2ValidPwd_OpenedHomepage" invocation-numbers="1"/>
-        </methods>
-      </class> <!-- test.SwagLabs1LoginTest -->
+      </class> <!-- test.SwagLabs2InventoryPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->
