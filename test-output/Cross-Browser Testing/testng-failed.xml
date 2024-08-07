@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cross-Browser Testing]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Login Functionality Test - Chrome(failed)">
+    <classes>
+      <class name="test.SwagLabs1LoginTests">
+        <methods>
+          <include name="doLogin_InvalidIdAndvalidPwd_FailedLoginAndErrorMSG"/>
+          <include name="launchBrowser"/>
+          <include name="doLogin_EmptyIdAndGivenPwd_DisplayedWarningMSG"/>
+          <include name="doLogin_EmptyIdAndEmptyPwd_DisplayedWarningMSG"/>
+          <include name="doLogin_InvalidIdAndInvalidPwd_FailedLoginAndErrorMSG"/>
+          <include name="configureReport"/>
+          <include name="doLogin_ValidIdAndInvalidPwd_FailedLoginAndErrorMSG"/>
+          <include name="doLogin_EmptyPwdAndGivenId_DisplayedWarningMSG"/>
+          <include name="publishResult"/>
+          <include name="createReport"/>
+          <include name="doLogin_Clickable_CompletedLogin"/>
+        </methods>
+      </class> <!-- test.SwagLabs1LoginTests -->
+    </classes>
+  </test> <!-- Login Functionality Test - Chrome(failed) -->
+</suite> <!-- Failed suite [Cross-Browser Testing] -->
