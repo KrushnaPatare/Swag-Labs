@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite">
+ <parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+   
+<<<<<<< HEAD
+      <class name="testRunner.LoginTestRunner"/>
+     
+=======
+      <class name="test.SwagLabs1LoginPageTest"/>
+      <class name="test.SwagLabs2InventoryPageTest"/>
+      <class name="test.SwagLabs3ProductPageTest"/>
+      <class name="test.SwagLabs4CartPageTest"/>
+      <class name="test.SwagLabs5CheckoutPageTest"/>
+      <class name="test.SwagLabs6CheckoutOverviewPageTest"/>
+      <class name="test.SwagLabs7CheckoutCompletepageTest"/>
+>>>>>>> refs/remotes/main/main
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- RegressionSuite -->

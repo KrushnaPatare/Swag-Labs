@@ -1,0 +1,2199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-22T19:27:17 IST" name="Default suite" finished-at="2024-07-22T19:27:17 IST" duration-ms="21">
+    <groups>
+    </groups>
+    <test started-at="2024-07-22T19:27:17 IST" name="Default test" finished-at="2024-07-22T19:27:17 IST" duration-ms="21">
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+=======
+<testng-results ignored="0" total="70" passed="64" failed="6" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-28T13:07:20 IST" name="RegressionSuite" finished-at="2023-09-28T13:13:45 IST" duration-ms="384965">
+    <groups>
+    </groups>
+    <test started-at="2023-09-28T13:07:20 IST" name="Test" finished-at="2023-09-28T13:13:45 IST" duration-ms="384965">
+      <class name="test.SwagLabs7CheckoutCompletepageTest">
+        <test-method is-config="true" signature="openCheckoutCompletePageSetup(java.lang.String)[pri:0, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1]" started-at="2023-09-28T13:13:35 IST" name="openCheckoutCompletePageSetup" finished-at="2023-09-28T13:13:40 IST" duration-ms="5080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutCompletePageSetup -->
+        <test-method signature="openCheckoutComplete_GreetInformation_Displyed()[pri:1, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1]" started-at="2023-09-28T13:13:40 IST" name="openCheckoutComplete_GreetInformation_Displyed" finished-at="2023-09-28T13:13:40 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutComplete_GreetInformation_Displyed -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1]" started-at="2023-09-28T13:13:40 IST" name="closeBrowser" finished-at="2023-09-28T13:13:41 IST" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCheckoutComplete_GreetInformation_Displyed status=SUCCESS method=SwagLabs7CheckoutCompletepageTest.openCheckoutComplete_GreetInformation_Displyed()[pri:1, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutCompletePageSetup(java.lang.String)[pri:0, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1]" started-at="2023-09-28T13:13:41 IST" name="openCheckoutCompletePageSetup" finished-at="2023-09-28T13:13:45 IST" duration-ms="4032" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutCompletePageSetup -->
+        <test-method signature="openCheckoutComplete_BackToHomeButton_RedirectedToProductpage()[pri:2, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1]" started-at="2023-09-28T13:13:45 IST" name="openCheckoutComplete_BackToHomeButton_RedirectedToProductpage" finished-at="2023-09-28T13:13:45 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutComplete_BackToHomeButton_RedirectedToProductpage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1]" started-at="2023-09-28T13:13:45 IST" name="closeBrowser" finished-at="2023-09-28T13:13:45 IST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCheckoutComplete_BackToHomeButton_RedirectedToProductpage status=SUCCESS method=SwagLabs7CheckoutCompletepageTest.openCheckoutComplete_BackToHomeButton_RedirectedToProductpage()[pri:2, instance:test.SwagLabs7CheckoutCompletepageTest@399c4be1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs7CheckoutCompletepageTest -->
+      <class name="test.SwagLabs6CheckoutOverviewPageTest">
+        <test-method is-config="true" signature="openCheckoutOverviewPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:16 IST" name="openCheckoutOverviewPageSetup" finished-at="2023-09-28T13:13:21 IST" duration-ms="5046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutOverviewPageSetup -->
+        <test-method signature="openCheckoutOverview_PurchaseInformation_Checked()[pri:1, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:21 IST" name="openCheckoutOverview_PurchaseInformation_Checked" finished-at="2023-09-28T13:13:22 IST" duration-ms="478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutOverview_PurchaseInformation_Checked -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:22 IST" name="closeBrowser" finished-at="2023-09-28T13:13:22 IST" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCheckoutOverview_PurchaseInformation_Checked status=SUCCESS method=SwagLabs6CheckoutOverviewPageTest.openCheckoutOverview_PurchaseInformation_Checked()[pri:1, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutOverviewPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:22 IST" name="openCheckoutOverviewPageSetup" finished-at="2023-09-28T13:13:26 IST" duration-ms="4057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutOverviewPageSetup -->
+        <test-method signature="openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete()[pri:2, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:26 IST" name="openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete" finished-at="2023-09-28T13:13:26 IST" duration-ms="223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:26 IST" name="closeBrowser" finished-at="2023-09-28T13:13:27 IST" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete status=SUCCESS method=SwagLabs6CheckoutOverviewPageTest.openCheckoutOverview_FinishButton_RedirectedToCheckoutComplete()[pri:2, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutOverviewPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:27 IST" name="openCheckoutOverviewPageSetup" finished-at="2023-09-28T13:13:34 IST" duration-ms="7583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutOverviewPageSetup -->
+        <test-method signature="openCheckoutOverview_CancelButton_RedirectedToProductpage()[pri:3, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:34 IST" name="openCheckoutOverview_CancelButton_RedirectedToProductpage" finished-at="2023-09-28T13:13:34 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutOverview_CancelButton_RedirectedToProductpage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9]" started-at="2023-09-28T13:13:34 IST" name="closeBrowser" finished-at="2023-09-28T13:13:35 IST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=openCheckoutOverview_CancelButton_RedirectedToProductpage status=SUCCESS method=SwagLabs6CheckoutOverviewPageTest.openCheckoutOverview_CancelButton_RedirectedToProductpage()[pri:3, instance:test.SwagLabs6CheckoutOverviewPageTest@45b4c3a9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs6CheckoutOverviewPageTest -->
+      <class name="test.SwagLabs5CheckoutPageTest">
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:09 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:13 IST" duration-ms="4280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_FirstnamePlaceholderText_Displayed()[pri:1, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:13 IST" name="clickCheckout_FirstnamePlaceholderText_Displayed" finished-at="2023-09-28T13:12:13 IST" duration-ms="471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_FirstnamePlaceholderText_Displayed -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:13 IST" name="closeBrowser" finished-at="2023-09-28T13:12:14 IST" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_FirstnamePlaceholderText_Displayed status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_FirstnamePlaceholderText_Displayed()[pri:1, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:14 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:18 IST" duration-ms="3900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_LastnamePlaceholderText_Displayed()[pri:2, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:18 IST" name="clickCheckout_LastnamePlaceholderText_Displayed" finished-at="2023-09-28T13:12:18 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_LastnamePlaceholderText_Displayed -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:18 IST" name="closeBrowser" finished-at="2023-09-28T13:12:18 IST" duration-ms="427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_LastnamePlaceholderText_Displayed status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_LastnamePlaceholderText_Displayed()[pri:2, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:18 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:22 IST" duration-ms="3591" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_PincodePlaceholderText_Displayed()[pri:3, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:22 IST" name="clickCheckout_PincodePlaceholderText_Displayed" finished-at="2023-09-28T13:12:22 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_PincodePlaceholderText_Displayed -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:22 IST" name="closeBrowser" finished-at="2023-09-28T13:12:22 IST" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_PincodePlaceholderText_Displayed status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_PincodePlaceholderText_Displayed()[pri:3, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:22 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:25 IST" duration-ms="3017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_InvalidFirstname_DisplayedErrorMSG()[pri:4, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:25 IST" name="clickCheckout_InvalidFirstname_DisplayedErrorMSG" finished-at="2023-09-28T13:12:26 IST" duration-ms="555" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:98)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_InvalidFirstname_DisplayedErrorMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:26 IST" name="closeBrowser" finished-at="2023-09-28T13:12:26 IST" duration-ms="367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_InvalidFirstname_DisplayedErrorMSG status=FAILURE method=SwagLabs5CheckoutPageTest.clickCheckout_InvalidFirstname_DisplayedErrorMSG()[pri:4, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:26 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:30 IST" duration-ms="3245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_InvalidLastname_DisplayedErrorMSG()[pri:5, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:30 IST" name="clickCheckout_InvalidLastname_DisplayedErrorMSG" finished-at="2023-09-28T13:12:30 IST" duration-ms="588" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:118)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_InvalidLastname_DisplayedErrorMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:30 IST" name="closeBrowser" finished-at="2023-09-28T13:12:31 IST" duration-ms="344" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_InvalidLastname_DisplayedErrorMSG status=FAILURE method=SwagLabs5CheckoutPageTest.clickCheckout_InvalidLastname_DisplayedErrorMSG()[pri:5, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:31 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:36 IST" duration-ms="4962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_InvalidZipcode_DisplayedErrorMSG()[pri:6, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:36 IST" name="clickCheckout_InvalidZipcode_DisplayedErrorMSG" finished-at="2023-09-28T13:12:36 IST" duration-ms="645" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-step-two.html] but found [https://www.saucedemo.com/checkout-step-one.html]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at test.SwagLabs5CheckoutPageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG(SwagLabs5CheckoutPageTest.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_InvalidZipcode_DisplayedErrorMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:37 IST" name="closeBrowser" finished-at="2023-09-28T13:12:37 IST" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_InvalidZipcode_DisplayedErrorMSG status=FAILURE method=SwagLabs5CheckoutPageTest.clickCheckout_InvalidZipcode_DisplayedErrorMSG()[pri:6, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:37 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:40 IST" duration-ms="3438" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()[pri:7, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:40 IST" name="clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:12:41 IST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:41 IST" name="closeBrowser" finished-at="2023-09-28T13:12:41 IST" duration-ms="266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()[pri:7, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:41 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:44 IST" duration-ms="3125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()[pri:8, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:44 IST" name="clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:12:44 IST" duration-ms="404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:44 IST" name="closeBrowser" finished-at="2023-09-28T13:12:45 IST" duration-ms="313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1FillFirstN2EmptyLastN3EmptyZipcode_DisplayedWarningMSG()[pri:8, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:45 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:48 IST" duration-ms="3044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()[pri:9, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:48 IST" name="clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:12:48 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:48 IST" name="closeBrowser" finished-at="2023-09-28T13:12:49 IST" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1FillFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()[pri:9, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:49 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:53 IST" duration-ms="4284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2()[pri:10, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:53 IST" name="clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2" finished-at="2023-09-28T13:12:54 IST" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2 -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:54 IST" name="closeBrowser" finished-at="2023-09-28T13:12:54 IST" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2 status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_ValData1FillFirstN2FillLastN3FillZipcode_OpenedCheckoutPage2()[pri:10, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:54 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:12:57 IST" duration-ms="3067" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()[pri:11, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:57 IST" name="clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:12:57 IST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:57 IST" name="closeBrowser" finished-at="2023-09-28T13:12:58 IST" duration-ms="329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2FillLastN3EmptyZipcode_DisplayedWarningMSG()[pri:11, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:12:58 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:13:02 IST" duration-ms="4184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG()[pri:12, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:02 IST" name="clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:13:02 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:02 IST" name="closeBrowser" finished-at="2023-09-28T13:13:03 IST" duration-ms="441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2FillLastN3FillZipcode_DisplayedWarningMSG()[pri:12, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:03 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:13:06 IST" duration-ms="3402" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()[pri:13, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:06 IST" name="clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:13:07 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:07 IST" name="closeBrowser" finished-at="2023-09-28T13:13:07 IST" duration-ms="439" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1EmptyFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()[pri:13, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:07 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:13:11 IST" duration-ms="3564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()[pri:14, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:11 IST" name="clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG" finished-at="2023-09-28T13:13:11 IST" duration-ms="601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:11 IST" name="closeBrowser" finished-at="2023-09-28T13:13:12 IST" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_1FillFirstN2EmptyLastN3FillZipcode_DisplayedWarningMSG()[pri:14, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCheckoutPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:12 IST" name="openCheckoutPageSetup" finished-at="2023-09-28T13:13:15 IST" duration-ms="3828" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCheckoutPageSetup -->
+        <test-method signature="clickCheckout_CancelButton_RedirectedToCartpage()[pri:15, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:15 IST" name="clickCheckout_CancelButton_RedirectedToCartpage" finished-at="2023-09-28T13:13:16 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout_CancelButton_RedirectedToCartpage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80]" started-at="2023-09-28T13:13:16 IST" name="closeBrowser" finished-at="2023-09-28T13:13:16 IST" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCheckout_CancelButton_RedirectedToCartpage status=SUCCESS method=SwagLabs5CheckoutPageTest.clickCheckout_CancelButton_RedirectedToCartpage()[pri:15, instance:test.SwagLabs5CheckoutPageTest@6a2f6f80] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs5CheckoutPageTest -->
+      <class name="test.SwagLabs1LoginPageTest">
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:21 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:26 IST" duration-ms="5231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:26 IST" name="doLogin_1ValidId2ValidPwd_OpenedHomepage" data-provider="LoginData" finished-at="2023-09-28T13:07:27 IST" duration-ms="819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1ValidId2ValidPwd_OpenedHomepage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:27 IST" name="closeBrowser" finished-at="2023-09-28T13:07:28 IST" duration-ms="521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1ValidId2ValidPwd_OpenedHomepage status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:28 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:31 IST" duration-ms="3534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:31 IST" name="doLogin_1ValidId2ValidPwd_OpenedHomepage" data-provider="LoginData" finished-at="2023-09-28T13:07:32 IST" duration-ms="527" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.saucedemo.com/inventory.html] but found [https://www.saucedemo.com/]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at test.SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(SwagLabs1LoginPageTest.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1ValidId2ValidPwd_OpenedHomepage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:32 IST" name="closeBrowser" finished-at="2023-09-28T13:07:32 IST" duration-ms="337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1ValidId2ValidPwd_OpenedHomepage status=FAILURE method=SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:32 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:36 IST" duration-ms="3252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:36 IST" name="doLogin_1ValidId2ValidPwd_OpenedHomepage" data-provider="LoginData" finished-at="2023-09-28T13:07:36 IST" duration-ms="587" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1ValidId2ValidPwd_OpenedHomepage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:36 IST" name="closeBrowser" finished-at="2023-09-28T13:07:37 IST" duration-ms="462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1ValidId2ValidPwd_OpenedHomepage status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:37 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:39 IST" duration-ms="2324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:39 IST" name="doLogin_1ValidId2ValidPwd_OpenedHomepage" data-provider="LoginData" finished-at="2023-09-28T13:07:45 IST" duration-ms="5714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1ValidId2ValidPwd_OpenedHomepage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:45 IST" name="closeBrowser" finished-at="2023-09-28T13:07:45 IST" duration-ms="495" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1ValidId2ValidPwd_OpenedHomepage status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1ValidId2ValidPwd_OpenedHomepage(java.lang.String,java.lang.String)[pri:1, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:45 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:48 IST" duration-ms="2445" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()[pri:2, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:48 IST" name="doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG" finished-at="2023-09-28T13:07:50 IST" duration-ms="2057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:50 IST" name="closeBrowser" finished-at="2023-09-28T13:07:50 IST" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1ValidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()[pri:2, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:50 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:52 IST" duration-ms="2360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG()[pri:3, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:52 IST" name="doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG" finished-at="2023-09-28T13:07:54 IST" duration-ms="1236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:54 IST" name="closeBrowser" finished-at="2023-09-28T13:07:54 IST" duration-ms="334" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1InvalidId2validPwd_FailedLoginAndVerifyErrorMSG()[pri:3, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:54 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:07:57 IST" duration-ms="3244" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()[pri:4, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:57 IST" name="doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG" finished-at="2023-09-28T13:07:58 IST" duration-ms="1007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:58 IST" name="closeBrowser" finished-at="2023-09-28T13:07:59 IST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1InvalidId2InvalidPwd_FailedLoginAndVerifyErrorMSG()[pri:4, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:07:59 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:02 IST" duration-ms="3197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG()[pri:5, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:02 IST" name="doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG" finished-at="2023-09-28T13:08:03 IST" duration-ms="1027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:03 IST" name="closeBrowser" finished-at="2023-09-28T13:08:03 IST" duration-ms="396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1EmptyId2GivenPwd_FailedLoginAndVerifyWarningMSG()[pri:5, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:03 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:07 IST" duration-ms="3493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG()[pri:6, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:07 IST" name="doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG" finished-at="2023-09-28T13:08:07 IST" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:07 IST" name="closeBrowser" finished-at="2023-09-28T13:08:08 IST" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1EmptyPwd2GivenId_FailedLoginAndVerifyWarningMSG()[pri:6, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:08 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:11 IST" duration-ms="3049" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG()[pri:7, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:11 IST" name="doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG" finished-at="2023-09-28T13:08:11 IST" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:11 IST" name="closeBrowser" finished-at="2023-09-28T13:08:11 IST" duration-ms="304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_1EmptyId2EmptyPwd_FailedLoginAndVerifyWarningMSG()[pri:7, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:11 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:14 IST" duration-ms="2033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_Clickable_CompletedLogin()[pri:8, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:14 IST" name="doLogin_Clickable_CompletedLogin" finished-at="2023-09-28T13:08:14 IST" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_Clickable_CompletedLogin -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:14 IST" name="closeBrowser" finished-at="2023-09-28T13:08:15 IST" duration-ms="413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_Clickable_CompletedLogin status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_Clickable_CompletedLogin()[pri:8, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:15 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:18 IST" duration-ms="2994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText()[pri:9, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:18 IST" name="doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText" finished-at="2023-09-28T13:08:18 IST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:18 IST" name="closeBrowser" finished-at="2023-09-28T13:08:18 IST" duration-ms="324" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_SwagLabsLogo_DisplayedLogoAndVerifyText()[pri:9, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:18 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:20 IST" duration-ms="2316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG()[pri:10, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:20 IST" name="doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG" finished-at="2023-09-28T13:08:32 IST" duration-ms="11119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:32 IST" name="closeBrowser" finished-at="2023-09-28T13:08:32 IST" duration-ms="288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_ErrorBoxCancelButton_ClosedErrorOrWarningMSG()[pri:10, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openLoginPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:32 IST" name="openLoginPageSetup" finished-at="2023-09-28T13:08:34 IST" duration-ms="2271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openLoginPageSetup -->
+        <test-method signature="doLogin_PlaceHolderText_Displayed()[pri:11, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:34 IST" name="doLogin_PlaceHolderText_Displayed" finished-at="2023-09-28T13:08:34 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin_PlaceHolderText_Displayed -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs1LoginPageTest@247bddad]" started-at="2023-09-28T13:08:34 IST" name="closeBrowser" finished-at="2023-09-28T13:08:35 IST" duration-ms="322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doLogin_PlaceHolderText_Displayed status=SUCCESS method=SwagLabs1LoginPageTest.doLogin_PlaceHolderText_Displayed()[pri:11, instance:test.SwagLabs1LoginPageTest@247bddad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs1LoginPageTest -->
+      <class name="test.SwagLabs4CartPageTest">
+        <test-method is-config="true" signature="openCartPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:46 IST" name="openCartPageSetup" finished-at="2023-09-28T13:11:49 IST" duration-ms="3323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCartPageSetup -->
+        <test-method signature="clickCart_AddedProducts_ShowedDetails()[pri:1, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:49 IST" name="clickCart_AddedProducts_ShowedDetails" finished-at="2023-09-28T13:11:49 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCart_AddedProducts_ShowedDetails -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:49 IST" name="closeBrowser" finished-at="2023-09-28T13:11:50 IST" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCart_AddedProducts_ShowedDetails status=SUCCESS method=SwagLabs4CartPageTest.clickCart_AddedProducts_ShowedDetails()[pri:1, instance:test.SwagLabs4CartPageTest@1190200a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCartPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:50 IST" name="openCartPageSetup" finished-at="2023-09-28T13:11:53 IST" duration-ms="3285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCartPageSetup -->
+        <test-method signature="clickCart_AddedProducts_Removed()[pri:2, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:53 IST" name="clickCart_AddedProducts_Removed" finished-at="2023-09-28T13:11:58 IST" duration-ms="5228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCart_AddedProducts_Removed -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:58 IST" name="closeBrowser" finished-at="2023-09-28T13:11:59 IST" duration-ms="420" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCart_AddedProducts_Removed status=SUCCESS method=SwagLabs4CartPageTest.clickCart_AddedProducts_Removed()[pri:2, instance:test.SwagLabs4CartPageTest@1190200a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCartPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:11:59 IST" name="openCartPageSetup" finished-at="2023-09-28T13:12:03 IST" duration-ms="3947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCartPageSetup -->
+        <test-method signature="clickCart_ContinueShoppingButton_RedirectedToHomepage()[pri:3, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:12:03 IST" name="clickCart_ContinueShoppingButton_RedirectedToHomepage" finished-at="2023-09-28T13:12:03 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCart_ContinueShoppingButton_RedirectedToHomepage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:12:03 IST" name="closeBrowser" finished-at="2023-09-28T13:12:03 IST" duration-ms="434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCart_ContinueShoppingButton_RedirectedToHomepage status=SUCCESS method=SwagLabs4CartPageTest.clickCart_ContinueShoppingButton_RedirectedToHomepage()[pri:3, instance:test.SwagLabs4CartPageTest@1190200a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openCartPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:12:03 IST" name="openCartPageSetup" finished-at="2023-09-28T13:12:08 IST" duration-ms="4564" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openCartPageSetup -->
+        <test-method signature="clickCart_CheckoutButton_OpenedCheckoutpage()[pri:4, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:12:08 IST" name="clickCart_CheckoutButton_OpenedCheckoutpage" finished-at="2023-09-28T13:12:08 IST" duration-ms="225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCart_CheckoutButton_OpenedCheckoutpage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs4CartPageTest@1190200a]" started-at="2023-09-28T13:12:08 IST" name="closeBrowser" finished-at="2023-09-28T13:12:09 IST" duration-ms="365" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCart_CheckoutButton_OpenedCheckoutpage status=SUCCESS method=SwagLabs4CartPageTest.clickCart_CheckoutButton_OpenedCheckoutpage()[pri:4, instance:test.SwagLabs4CartPageTest@1190200a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs4CartPageTest -->
+      <class name="test.SwagLabs3ProductPageTest">
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:05 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:09 IST" duration-ms="3790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_ProductImg_OpenedProductpage()[pri:1, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:09 IST" name="clickProduct_ProductImg_OpenedProductpage" finished-at="2023-09-28T13:11:09 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_ProductImg_OpenedProductpage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:09 IST" name="closeBrowser" finished-at="2023-09-28T13:11:10 IST" duration-ms="393" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_ProductImg_OpenedProductpage status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_ProductImg_OpenedProductpage()[pri:1, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:10 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:14 IST" duration-ms="3754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_ProductBanner_OpenedProductpage()[pri:2, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:14 IST" name="clickProduct_ProductBanner_OpenedProductpage" finished-at="2023-09-28T13:11:14 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_ProductBanner_OpenedProductpage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:14 IST" name="closeBrowser" finished-at="2023-09-28T13:11:14 IST" duration-ms="460" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_ProductBanner_OpenedProductpage status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_ProductBanner_OpenedProductpage()[pri:2, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:14 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:17 IST" duration-ms="2957" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_ProductBanner$Description$Price_Checked()[pri:3, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:17 IST" name="clickProduct_ProductBanner$Description$Price_Checked" finished-at="2023-09-28T13:11:18 IST" duration-ms="394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_ProductBanner$Description$Price_Checked -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:18 IST" name="closeBrowser" finished-at="2023-09-28T13:11:18 IST" duration-ms="408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_ProductBanner$Description$Price_Checked status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_ProductBanner$Description$Price_Checked()[pri:3, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:18 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:21 IST" duration-ms="2681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_AddProductButton_AddedToCart()[pri:4, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:21 IST" name="clickProduct_AddProductButton_AddedToCart" finished-at="2023-09-28T13:11:21 IST" duration-ms="525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_AddProductButton_AddedToCart -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:21 IST" name="closeBrowser" finished-at="2023-09-28T13:11:22 IST" duration-ms="379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_AddProductButton_AddedToCart status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_AddProductButton_AddedToCart()[pri:4, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:22 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:26 IST" duration-ms="3826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_RemoveProductButton_RemovedFromCart()[pri:5, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:26 IST" name="clickProduct_RemoveProductButton_RemovedFromCart" finished-at="2023-09-28T13:11:32 IST" duration-ms="6623" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_RemoveProductButton_RemovedFromCart -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:32 IST" name="closeBrowser" finished-at="2023-09-28T13:11:33 IST" duration-ms="447" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_RemoveProductButton_RemovedFromCart status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_RemoveProductButton_RemovedFromCart()[pri:5, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:33 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:36 IST" duration-ms="3423" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_ProductAddOrRemoveButton_Clickable()[pri:6, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:36 IST" name="clickProduct_ProductAddOrRemoveButton_Clickable" finished-at="2023-09-28T13:11:37 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_ProductAddOrRemoveButton_Clickable -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:37 IST" name="closeBrowser" finished-at="2023-09-28T13:11:37 IST" duration-ms="315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_ProductAddOrRemoveButton_Clickable status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_ProductAddOrRemoveButton_Clickable()[pri:6, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:37 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:40 IST" duration-ms="3302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickProduct_BackToProductsButton_GoneToHomepage()[pri:7, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:40 IST" name="clickProduct_BackToProductsButton_GoneToHomepage" finished-at="2023-09-28T13:11:41 IST" duration-ms="509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickProduct_BackToProductsButton_GoneToHomepage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:41 IST" name="closeBrowser" finished-at="2023-09-28T13:11:41 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickProduct_BackToProductsButton_GoneToHomepage status=SUCCESS method=SwagLabs3ProductPageTest.clickProduct_BackToProductsButton_GoneToHomepage()[pri:7, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openProductPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:41 IST" name="openProductPageSetup" finished-at="2023-09-28T13:11:45 IST" duration-ms="3684" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openProductPageSetup -->
+        <test-method signature="clickCart_Clickable_OpenedCart()[pri:8, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:45 IST" name="clickCart_Clickable_OpenedCart" finished-at="2023-09-28T13:11:45 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCart_Clickable_OpenedCart -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs3ProductPageTest@707194ba]" started-at="2023-09-28T13:11:45 IST" name="closeBrowser" finished-at="2023-09-28T13:11:46 IST" duration-ms="580" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickCart_Clickable_OpenedCart status=SUCCESS method=SwagLabs3ProductPageTest.clickCart_Clickable_OpenedCart()[pri:8, instance:test.SwagLabs3ProductPageTest@707194ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs3ProductPageTest -->
+      <class name="test.SwagLabs2InventoryPageTest">
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:35 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:08:40 IST" duration-ms="5690" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="verifyHomepage_LogoPresendAndSpelling_Checked()[pri:1, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:40 IST" name="verifyHomepage_LogoPresendAndSpelling_Checked" finished-at="2023-09-28T13:08:40 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepage_LogoPresendAndSpelling_Checked -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:40 IST" name="closeBrowser" finished-at="2023-09-28T13:08:41 IST" duration-ms="316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomepage_LogoPresendAndSpelling_Checked status=SUCCESS method=SwagLabs2InventoryPageTest.verifyHomepage_LogoPresendAndSpelling_Checked()[pri:1, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:41 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:08:45 IST" duration-ms="3724" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_Clickable_OpenedDropdown()[pri:2, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:45 IST" name="clickSort_Clickable_OpenedDropdown" finished-at="2023-09-28T13:08:45 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_Clickable_OpenedDropdown -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:45 IST" name="closeBrowser" finished-at="2023-09-28T13:08:45 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_Clickable_OpenedDropdown status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_Clickable_OpenedDropdown()[pri:2, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:45 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:08:49 IST" duration-ms="3573" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_OptionsList_CheckedAllOptions()[pri:3, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:49 IST" name="clickSort_OptionsList_CheckedAllOptions" finished-at="2023-09-28T13:08:49 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_OptionsList_CheckedAllOptions -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:49 IST" name="closeBrowser" finished-at="2023-09-28T13:08:49 IST" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_OptionsList_CheckedAllOptions status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_OptionsList_CheckedAllOptions()[pri:3, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:49 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:08:54 IST" duration-ms="4353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_PriceHighToLow_GotInOrder()[pri:4, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:54 IST" name="clickSort_PriceHighToLow_GotInOrder" finished-at="2023-09-28T13:08:54 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_PriceHighToLow_GotInOrder -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:54 IST" name="closeBrowser" finished-at="2023-09-28T13:08:54 IST" duration-ms="328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_PriceHighToLow_GotInOrder status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_PriceHighToLow_GotInOrder()[pri:4, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:08:54 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:02 IST" duration-ms="7654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_PriceLowToHigh_GotInOrder()[pri:5, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:02 IST" name="clickSort_PriceLowToHigh_GotInOrder" finished-at="2023-09-28T13:09:03 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_PriceLowToHigh_GotInOrder -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:03 IST" name="closeBrowser" finished-at="2023-09-28T13:09:03 IST" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_PriceLowToHigh_GotInOrder status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_PriceLowToHigh_GotInOrder()[pri:5, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:03 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:08 IST" duration-ms="4887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_ProductDescending_GotInOrder()[pri:6, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:08 IST" name="clickSort_ProductDescending_GotInOrder" finished-at="2023-09-28T13:09:08 IST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_ProductDescending_GotInOrder -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:08 IST" name="closeBrowser" finished-at="2023-09-28T13:09:09 IST" duration-ms="343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_ProductDescending_GotInOrder status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_ProductDescending_GotInOrder()[pri:6, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:09 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:13 IST" duration-ms="4846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_ProductAscending_GotInOrder()[pri:7, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:13 IST" name="clickSort_ProductAscending_GotInOrder" finished-at="2023-09-28T13:09:14 IST" duration-ms="348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_ProductAscending_GotInOrder -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:14 IST" name="closeBrowser" finished-at="2023-09-28T13:09:14 IST" duration-ms="378" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_ProductAscending_GotInOrder status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_ProductAscending_GotInOrder()[pri:7, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:14 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:18 IST" duration-ms="3830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_ProductCountAfter_RemainedSame()[pri:8, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:18 IST" name="clickSort_ProductCountAfter_RemainedSame" finished-at="2023-09-28T13:09:18 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_ProductCountAfter_RemainedSame -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:18 IST" name="closeBrowser" finished-at="2023-09-28T13:09:19 IST" duration-ms="345" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_ProductCountAfter_RemainedSame status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_ProductCountAfter_RemainedSame()[pri:8, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:19 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:23 IST" duration-ms="3938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_ProductsBefore_PredefinedNumber()[pri:9, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:23 IST" name="clickSort_ProductsBefore_PredefinedNumber" finished-at="2023-09-28T13:09:23 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_ProductsBefore_PredefinedNumber -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:23 IST" name="closeBrowser" finished-at="2023-09-28T13:09:23 IST" duration-ms="362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_ProductsBefore_PredefinedNumber status=SUCCESS method=SwagLabs2InventoryPageTest.clickSort_ProductsBefore_PredefinedNumber()[pri:9, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:23 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:27 IST" duration-ms="3873" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSort_ProductOrder_UnarrangedLikeBefore()[pri:10, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:27 IST" name="clickSort_ProductOrder_UnarrangedLikeBefore" finished-at="2023-09-28T13:09:32 IST" duration-ms="5217" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=112.0.5615.50)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a0fde12f712f37513a9ccf5d6a8173a, clickElement {id=868a58dc-0dd7-488f-9065-e2f3c55acd64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58577}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58577/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1a0fde12f712f37513a9ccf5d6a8173a)] -> xpath: //a[text()='All Items']]
+Session ID: 1a0fde12f712f37513a9ccf5d6a8173a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=112.0.5615.50)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1a0fde12f712f37513a9ccf5d6a8173a, clickElement {id=868a58dc-0dd7-488f-9065-e2f3c55acd64}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.50, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58577}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58577/devtoo..., se:cdpVersion: 112.0.5615.50, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1a0fde12f712f37513a9ccf5d6a8173a)] -> xpath: //a[text()='All Items']]
+Session ID: 1a0fde12f712f37513a9ccf5d6a8173a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
+at pom.SwagLabsHomepage.clickOnAllItemsButton(SwagLabsHomepage.java:78)
+at test.SwagLabs2InventoryPageTest.clickSort_ProductOrder_UnarrangedLikeBefore(SwagLabs2InventoryPageTest.java:209)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSort_ProductOrder_UnarrangedLikeBefore -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:32 IST" name="closeBrowser" finished-at="2023-09-28T13:09:33 IST" duration-ms="479" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSort_ProductOrder_UnarrangedLikeBefore status=FAILURE method=SwagLabs2InventoryPageTest.clickSort_ProductOrder_UnarrangedLikeBefore()[pri:10, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:33 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:38 IST" duration-ms="5247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSortBefore_DoOtherActions_SavedSortingType()[pri:11, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:38 IST" name="clickSortBefore_DoOtherActions_SavedSortingType" finished-at="2023-09-28T13:09:39 IST" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSortBefore_DoOtherActions_SavedSortingType -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:39 IST" name="closeBrowser" finished-at="2023-09-28T13:09:39 IST" duration-ms="325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSortBefore_DoOtherActions_SavedSortingType status=SUCCESS method=SwagLabs2InventoryPageTest.clickSortBefore_DoOtherActions_SavedSortingType()[pri:11, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:39 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:43 IST" duration-ms="4068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickSortAfter_PreviousSortedResults_GotSortedAgain()[pri:12, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:43 IST" name="clickSortAfter_PreviousSortedResults_GotSortedAgain" finished-at="2023-09-28T13:09:44 IST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSortAfter_PreviousSortedResults_GotSortedAgain -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:44 IST" name="closeBrowser" finished-at="2023-09-28T13:09:44 IST" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickSortAfter_PreviousSortedResults_GotSortedAgain status=SUCCESS method=SwagLabs2InventoryPageTest.clickSortAfter_PreviousSortedResults_GotSortedAgain()[pri:12, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:44 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:48 IST" duration-ms="4007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickOpenMenu_Clickable_OpenedAllOptions()[pri:13, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:48 IST" name="clickOpenMenu_Clickable_OpenedAllOptions" finished-at="2023-09-28T13:09:48 IST" duration-ms="255" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [] but found [All Items]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [] but found [All Items]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at test.SwagLabs2InventoryPageTest.clickOpenMenu_Clickable_OpenedAllOptions(SwagLabs2InventoryPageTest.java:271)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOpenMenu_Clickable_OpenedAllOptions -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:49 IST" name="closeBrowser" finished-at="2023-09-28T13:09:49 IST" duration-ms="381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOpenMenu_Clickable_OpenedAllOptions status=FAILURE method=SwagLabs2InventoryPageTest.clickOpenMenu_Clickable_OpenedAllOptions()[pri:13, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:49 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:09:53 IST" duration-ms="4013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickOpenMenu_$About$Option_OpenedLinkedPage()[pri:14, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:53 IST" name="clickOpenMenu_$About$Option_OpenedLinkedPage" finished-at="2023-09-28T13:09:58 IST" duration-ms="5021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOpenMenu_$About$Option_OpenedLinkedPage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:58 IST" name="closeBrowser" finished-at="2023-09-28T13:09:59 IST" duration-ms="643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOpenMenu_$About$Option_OpenedLinkedPage status=SUCCESS method=SwagLabs2InventoryPageTest.clickOpenMenu_$About$Option_OpenedLinkedPage()[pri:14, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:09:59 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:04 IST" duration-ms="5025" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts()[pri:15, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:04 IST" name="clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts" finished-at="2023-09-28T13:10:05 IST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:05 IST" name="closeBrowser" finished-at="2023-09-28T13:10:05 IST" duration-ms="376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts status=SUCCESS method=SwagLabs2InventoryPageTest.clickOpenMenu_$AllItems$Option_ShowedAllHomepageProducts()[pri:15, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:05 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:09 IST" duration-ms="3804" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickOpenMenu_$Logout$Option_LoggedoutUser()[pri:16, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:09 IST" name="clickOpenMenu_$Logout$Option_LoggedoutUser" finished-at="2023-09-28T13:10:09 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOpenMenu_$Logout$Option_LoggedoutUser -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:09 IST" name="closeBrowser" finished-at="2023-09-28T13:10:10 IST" duration-ms="360" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOpenMenu_$Logout$Option_LoggedoutUser status=SUCCESS method=SwagLabs2InventoryPageTest.clickOpenMenu_$Logout$Option_LoggedoutUser()[pri:16, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:10 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:15 IST" duration-ms="5059" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickOpenMenu_$ResetAppState$Option_DefaultAppState()[pri:17, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:15 IST" name="clickOpenMenu_$ResetAppState$Option_DefaultAppState" finished-at="2023-09-28T13:10:20 IST" duration-ms="5609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOpenMenu_$ResetAppState$Option_DefaultAppState -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:20 IST" name="closeBrowser" finished-at="2023-09-28T13:10:21 IST" duration-ms="392" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOpenMenu_$ResetAppState$Option_DefaultAppState status=SUCCESS method=SwagLabs2InventoryPageTest.clickOpenMenu_$ResetAppState$Option_DefaultAppState()[pri:17, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:21 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:25 IST" duration-ms="4551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickOpenMenu_CloseMenuButton_ClosedAllOptions()[pri:18, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:25 IST" name="clickOpenMenu_CloseMenuButton_ClosedAllOptions" finished-at="2023-09-28T13:10:26 IST" duration-ms="472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOpenMenu_CloseMenuButton_ClosedAllOptions -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:26 IST" name="closeBrowser" finished-at="2023-09-28T13:10:26 IST" duration-ms="330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickOpenMenu_CloseMenuButton_ClosedAllOptions status=SUCCESS method=SwagLabs2InventoryPageTest.clickOpenMenu_CloseMenuButton_ClosedAllOptions()[pri:18, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:26 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:30 IST" duration-ms="3536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickTwitterTab_SocialSite_OpenedTwitterPage()[pri:19, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:30 IST" name="clickTwitterTab_SocialSite_OpenedTwitterPage" finished-at="2023-09-28T13:10:35 IST" duration-ms="5239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTwitterTab_SocialSite_OpenedTwitterPage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:35 IST" name="closeBrowser" finished-at="2023-09-28T13:10:35 IST" duration-ms="489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickTwitterTab_SocialSite_OpenedTwitterPage status=SUCCESS method=SwagLabs2InventoryPageTest.clickTwitterTab_SocialSite_OpenedTwitterPage()[pri:19, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:35 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:40 IST" duration-ms="4607" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickFacebookTab_SocialSite_OpenedFacebookPage()[pri:20, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:40 IST" name="clickFacebookTab_SocialSite_OpenedFacebookPage" finished-at="2023-09-28T13:10:41 IST" duration-ms="1273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFacebookTab_SocialSite_OpenedFacebookPage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:41 IST" name="closeBrowser" finished-at="2023-09-28T13:10:42 IST" duration-ms="409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickFacebookTab_SocialSite_OpenedFacebookPage status=SUCCESS method=SwagLabs2InventoryPageTest.clickFacebookTab_SocialSite_OpenedFacebookPage()[pri:20, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:42 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:46 IST" duration-ms="4657" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="clickLinkedTab_SocialSite_OpenedLinkedPage()[pri:21, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:46 IST" name="clickLinkedTab_SocialSite_OpenedLinkedPage" finished-at="2023-09-28T13:10:49 IST" duration-ms="2875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLinkedTab_SocialSite_OpenedLinkedPage -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:49 IST" name="closeBrowser" finished-at="2023-09-28T13:10:49 IST" duration-ms="327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickLinkedTab_SocialSite_OpenedLinkedPage status=SUCCESS method=SwagLabs2InventoryPageTest.clickLinkedTab_SocialSite_OpenedLinkedPage()[pri:21, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:49 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:10:54 IST" duration-ms="4537" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="verifyCartTab_TotalProductNumber_ShowedInNotification()[pri:22, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:54 IST" name="verifyCartTab_TotalProductNumber_ShowedInNotification" finished-at="2023-09-28T13:10:56 IST" duration-ms="2238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartTab_TotalProductNumber_ShowedInNotification -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:56 IST" name="closeBrowser" finished-at="2023-09-28T13:10:57 IST" duration-ms="328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCartTab_TotalProductNumber_ShowedInNotification status=SUCCESS method=SwagLabs2InventoryPageTest.verifyCartTab_TotalProductNumber_ShowedInNotification()[pri:22, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:10:57 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:11:00 IST" duration-ms="3518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="verifyHomepageFooter_Text_Checked()[pri:23, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:11:00 IST" name="verifyHomepageFooter_Text_Checked" finished-at="2023-09-28T13:11:00 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageFooter_Text_Checked -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:11:00 IST" name="closeBrowser" finished-at="2023-09-28T13:11:00 IST" duration-ms="315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomepageFooter_Text_Checked status=SUCCESS method=SwagLabs2InventoryPageTest.verifyHomepageFooter_Text_Checked()[pri:23, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openInventoryPageSetup(java.lang.String)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:11:00 IST" name="openInventoryPageSetup" finished-at="2023-09-28T13:11:04 IST" duration-ms="3773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openInventoryPageSetup -->
+        <test-method signature="verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully()[pri:24, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:11:04 IST" name="verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully" finished-at="2023-09-28T13:11:05 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.SwagLabs2InventoryPageTest@75db5df9]" started-at="2023-09-28T13:11:05 IST" name="closeBrowser" finished-at="2023-09-28T13:11:05 IST" duration-ms="359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully status=SUCCESS method=SwagLabs2InventoryPageTest.verifyHomepageNavigation_BackForewardRefresh_ReloadedWebpageSuccessfully()[pri:24, instance:test.SwagLabs2InventoryPageTest@75db5df9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- test.SwagLabs2InventoryPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- RegressionSuite -->
+>>>>>>> refs/remotes/main/main
+</testng-results>
