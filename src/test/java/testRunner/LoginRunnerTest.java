@@ -45,7 +45,11 @@ public class LoginRunnerTest extends BaseClass {
 	public void closeBrowser(ITestResult result)
 	{
 		BaseClass.logout();
-	}
+	}uyfgjpgfuotdfy
+	dafduigcvjl
+	djoghjogc
+	sjkojhgfvbn
+	utdgfcghj'lkj
 	
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 }
