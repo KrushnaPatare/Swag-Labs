@@ -86,5 +86,5 @@ public class SwagLabs7CheckoutCompletepageTest extends BaseClass {
 		Assert.assertEquals(expectedUrl, actualUrl);
 		Thread.sleep(100);
 	}
-
+asdjhgfdfghhhdsfbbbbbbbbbbbbbbbbszbe
 }
