@@ -34,7 +34,7 @@ public class LoginRunnerTest extends BaseClass {
 	{
 		
 		System.out.println(testCaseName);
-		System.out.println(user);
+		System.out.println(user);dfdddddddddddddddddddd
 		System.out.println(pass);
 		
 		context.setAttribute("addingTestCaseName", testCaseName);;
